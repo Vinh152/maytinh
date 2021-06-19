@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SẢN PHẨM</title>
+    <link rel="stylesheet" href="./CSS/trang-show-san-pham.css">
+    <link rel="stylesheet" href="./ICON/fontawesome-free-5.15.2-web/fontawesome-free-5.15.2-web/css/all.min.css">
+</head>
+<body>
+    <script>
+        var couter=1;
+        setInterval(function() {
+            document.getElementById('radio' + couter).checked=true;
+            couter++;
+            if(couter>4){
+                couter=1;
+            }
+        }, 2000)
+    </script>
+    <div class="header"><!--làm phần header-->
+        <div class="full-background"><!--làm phần full màn hình-->
+            <div class="wraper">
+                <div class="header-first">   <!--làm phần header đầu tiên-->
+                    <p class="number-phone"><i class="fas fa-phone-square-alt"></i> 0988888290</p>
+                    <div class="header-first-tittle">
+                        <marquee><p>Coco Shop - Hệ thống thương hiệu mỹ phẩm chính hãng, với 600 thương hiệu mỹ phẩm - uy tín - chất lượng Top 1 Việt Nam </p></marquee>
+                    </div>
+                    <div class="header-first-icon">
+                        <a href="">VI</a>
+                        <a href="">EN</a>
+                    </div>
+                </div> <!--hết làm phần header đầu tiên-->
+            </div><!--hết div wraper-->
+        </div><!--hết làm phần full màn hình-->
+    
+        <div class="wraper">
+            <div class="header-second"> <!--làm phần header thứ 2-->
+                <div class="logo">
+                    <a href=""><img src="https://cocoshop.vn/uploads/logohead-min.png" alt=""></a>
+                </div>
+                <div class="header-second-search">
+                   <form action="#">
+                    <input class="search" type="text" placeholder="Tìm kiếm.....">
+                    <input class="submit" type="submit" value="Search">
+                   </form>
+                </div>
+                <div class="login">
+                    <div class="icon-login">
+                        <i class="fas fa-user-alt"></i>
+                    </div>
+                    <div class="login-item">
+                        <a onclick="login()" href="">Đăng nhập/Đăng ký</a>
+                    </div>
+                </div>
+                <div class="buy">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div> <!--làm phần header thứ 2-->
+        </div> <!--hết div wraper-->
+    
+        <!-- làm phần header thứ ba -->
+        <div class="header-three">
+            <div class="wraper">
+                <div class="header-three-menu">
+                    <ul>
+                        <li class="header-three-menu-item item1">DANH MỤC SẢN PHẨM <i class="fas fa-list-ul"></i></li>
+                        <li class="header-three-menu-item"><a href="">thương hiệu</a> </li>
+                        <li class="header-three-menu-item"><a href="">khuyến mại</a> </li>
+                        <li class="header-three-menu-item"><a href="http://127.0.0.1:5500/trang-tin-tuc.html">xu hướng làm đẹp</a> </li>
+                        <li class="header-three-menu-item"><a href="">tra cứu đơn hàng</a> </li>
+                        <li class="header-three-menu-item"><a href="">liên hệ</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- làm phần header thứ tư -->
+        <div class="header-four">
+            <div class="wraper1">
+                <div class="header-four-left">
+                    <ul>
+                        <li class="header-four-menu-item">
+                           <div class="header-four-menu-item-text">
+                               <img src="https://cocoshop.vn/assets/shops/2019_07/trangdiem-min_1.png" alt="">
+                               <a class="a1" href="">trang điểm - makeup</a>
+                           </div>
+                           <i class="fas fa-angle-right"></i>
+                           <div class="dropdown-menu d1"> <!--làm phần dropdown-->
+                            <div class="dropdown-menu-item">
+                                <ul>
+                                    <li class="drowdown-item"><a href="">Kem lót - Makeup prmer</a></li>
+                                    <li class="drowdown-item"><a href="">Phấn nước - Cushion</a></li>
+                                    <li class="drowdown-item"><a href="">Phấn phủ - Powder</a></li>
+                                    <li class="drowdown-item"><a href="">Kẻ mắt - Eyeliner</a></li>
+                                    <li class="drowdown-item"><a href="">Mascara</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown-menu-item">
+                                <ul>
+                                    <li class="drowdown-item"><a href="">Kem nền - BB - CC</a></li>
+                                    <li class="drowdown-item"><a href="">Che khuyết điểm</a></li>
+                                    <li class="drowdown-item"><a href="">Phấn mắt - Phấn má</a></li>
+                                    <li class="drowdown-item"><a href="">Kẻ mày - Eyebrown</a></li>
+                                    <li class="drowdown-item"><a href="">Others</a></li>
+                                </ul>
+                            </div>
+                        </div> <!--hết làm phần dropdown-->
+                        </li>
+    
+    
+                        <li class="header-four-menu-item">
+                            <div class="header-four-menu-item-text">
+                                <img src="https://cocoshop.vn/assets/shops/2020_04/trangdiemmoi.png" alt="">
+                                <a class="a1" href="">son môi - lips</a>
+                            </div>
+                            <i class="fas fa-angle-right"></i>
+                            <div class="dropdown-menu d2"> <!--làm phần dropdown-->
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Son dưỡng - Lipbalm</a></li>
+                                        <li class="drowdown-item"><a href="">Son kem - Lip Tint</a></li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Son thỏi - Lipstick</a></li>
+                                        <li class="drowdown-item"><a href="">Sản phẩm chăm sóc môi</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div> <!--hết làm phần dropdown-->
+                         </li>
+    
+    
+                         <li class="header-four-menu-item ">
+                            <div class="header-four-menu-item-text">
+                                <img src="https://cocoshop.vn/assets/shops/2019_07/chamsocda-min_1.png" alt="">
+                                <a  class="a1" href="">chăm sóc da - skin care</a>
+                            </div>
+                            <i class="fas fa-angle-right"></i>
+                            <div class="dropdown-menu d3"> <!--làm phần dropdown-->
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Tẩy trang - Micellar...</a></li>
+                                        <li class="drowdown-item"><a href="">Tẩy da chết - Scrub</a></li>
+                                        <li class="drowdown-item"><a href="">Sữa dưỡng - Lotion</a></li>
+                                        <li class="drowdown-item"><a href="">Kem dưỡng - Faclal Cream</a></li>
+                                        <li class="drowdown-item"><a href="">Kem mắt - Eye Cream</a></li>
+                                        <li class="drowdown-item"><a href="">Mặt nạ - Mask</a></li>
+                                        <li class="drowdown-item"><a href="">Kem chống nắng</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Sữa rửa mặt - Cleansing...</a></li>
+                                        <li class="drowdown-item"><a href="">Nước hoa hồng - Toner</a></li>
+                                        <li class="drowdown-item"><a href="">Serum</a></li>
+                                        <li class="drowdown-item"><a href="">Kem trị mụn - Acne...</a></li>
+                                        <li class="drowdown-item"><a href="">Dưỡng mi - Eyelash Care</a></li>
+                                        <li class="drowdown-item"><a href="">Xịt khoáng - Facial Mist</a></li>
+                                        <li class="drowdown-item"><a href="">Kem trị sẹo - Trị nám</a></li>
+                                    </ul>
+                                </div>
+                            </div> <!--hết làm phần dropdown-->
+                         </li>
+    
+    
+                         <li class="header-four-menu-item">
+                            <div class="header-four-menu-item-text">
+                                <img src="https://cocoshop.vn/assets/shops/2019_07/chamsoccothe-min_1.png" alt="">
+                                <a class="a1" href="">chăm sóc cơ thể - body</a>
+                            </div>
+                            <i class="fas fa-angle-right"></i>
+                            <div class="dropdown-menu d4"> <!--làm phần dropdown-->
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Sữa tắm - Shower Gel</a></li>
+                                        <li class="drowdown-item"><a href="">Tẩy da chết body - Body...</a></li>
+                                        <li class="drowdown-item"><a href="">Body Mist</a></li>
+                                        <li class="drowdown-item"><a href="">Lăn xịt khử mùi -...</a></li>
+                                        <li class="drowdown-item"><a href="">Dung dịch vệ sinh</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Xà phòng - Soap</a></li>
+                                        <li class="drowdown-item"><a href="">Dưỡng thể - Body Lotlon</a></li>
+                                        <li class="drowdown-item"><a href="">Tẩy lông - Waxing Cream</a></li>
+                                        <li class="drowdown-item"><a href="">Kem tan mỡ - Trị rạn -...</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div> <!--hết làm phần dropdown-->
+                         </li>
+    
+    
+                         <li class="header-four-menu-item">
+                            <div class="header-four-menu-item-text">
+                                <img src="https://cocoshop.vn/assets/shops/2019_07/chamsoctocmin.png" alt="">
+                                <a class="a1" href="">chăm sóc tóc - hair</a>
+                            </div>
+                            <i class="fas fa-angle-right"></i>
+                            <div class="dropdown-menu d5"> <!--làm phần dropdown-->
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Dầu gội/xả...</a></li>
+                                        <li class="drowdown-item"><a href="">Thuốc nhuộn tóc - Hair...</a></li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Dưỡng tóc</a></li>
+                                        <li class="drowdown-item"><a href="">Ủ tóc</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div> <!--hết làm phần dropdown-->
+                         </li>
+    
+                         <li class="header-four-menu-item">
+                            <div class="header-four-menu-item-text">
+                                <img src="https://cocoshop.vn/assets/shops/2019_07/dungcu-min.png" alt="">
+                                <a  class="a1" href="">dụng cụ - tools</a>
+                            </div>
+                            <i class="fas fa-angle-right"></i>
+                            <div class="dropdown-menu d6"> <!--làm phần dropdown-->
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Bông trang điểm</a></li>
+                                        <li class="drowdown-item"><a href="">Kẹp mi- Dao cạo</a></li>
+                                        <li class="drowdown-item"><a href="">Bông tẩy trang</a></li>
+                                        <li class="drowdown-item"><a href="">Giấy thấm dầu</a></li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Dụng cụ chăm sóc da</a></li>
+                                        <li class="drowdown-item"><a href="">Cọ trang điểm</a></li>
+                                        <li class="drowdown-item"><a href="">Mi giả - Kích mí </a></li>
+                                        <li class="drowdown-item"><a href="">Túi/khay - Bộ chiết mỹ phẩm</a></li>
+                                        <li class="drowdown-item"><a href="">Mascara</a></li>
+                                    </ul>
+                                </div>
+                            </div> <!--hết làm phần dropdown-->
+                         </li>
+    
+                         <li class="header-four-menu-item">
+                            <div class="header-four-menu-item-text">
+                                <img src="https://cocoshop.vn/assets/shops/2019_07/nuoschoa-min.png" alt="">
+                                <a class="a1" href="">nước hoa - perfume</a>
+                            </div>
+                            <i class="fas fa-angle-right"></i>
+                            <div class="dropdown-menu d7"> <!--làm phần dropdown-->
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Nước hoa body</a></li>
+                                        <li class="drowdown-item"><a href="">Nước hoa nữ</a></li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Nước hoa nam</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div> <!--hết làm phần dropdown-->
+                         </li>
+    
+                         <li class="header-four-menu-item">
+                            <div class="header-four-menu-item-text">
+                                <img src="https://cocoshop.vn/assets/shops/2019_07/spkhac-min_1.png" alt="">
+                                <a class="a1" href="">sản phẩm khác - others</a>
+                            </div>
+                            <i class="fas fa-angle-right"></i>
+                            <div class="dropdown-menu d8"> <!--làm phần dropdown-->
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Vitamin</a></li>
+                                        <li class="drowdown-item"><a href="">Kem đánh răng</a></li>
+                                        <li class="drowdown-item"><a href="">Các sản phẩm khác</a></li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Trà giảm cân</a></li>
+                                        <li class="drowdown-item"><a href="">Xịt thơm quần áo</a></li>
+                                        <li class="drowdown-item"><a href="">Viên uống DHC</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div> <!--hết làm phần dropdown-->
+                         </li>
+                    </ul>
+                </div>
+                <div class="header-four-between">
+                    <div class="slides">
+                        <div class="slide">
+                            <input type="radio" name="check" id="radio1">
+                            <input type="radio" name="check" id="radio2">
+                            <input type="radio" name="check" id="radio3">
+                            <input type="radio" name="check" id="radio4">
+    
+    
+                            <div class="slide-img first">
+                                <img src="https://cocoshop.vn/uploads/slider/images/bnw.jpg" alt="">
+                            </div>
+                            <div class="slide-img ">
+                                <img src="https://cocoshop.vn/uploads/slider/images/bnbg-web.jpg" alt="">
+                            </div>
+                            <div class="slide-img ">
+                                <img src="https://cocoshop.vn/uploads/slider/images/bnw2.jpg" alt="">
+                            </div>
+                            <div class="slide-img ">
+                                <img src="https://cdn.pixabay.com/photo/2015/11/26/00/54/cosmetics-1063134_960_720.jpg" alt="">
+                            </div>
+    
+                            <div class="dieu-huong-tu-dong-auto">
+                                <div class="auto-bt1"></div>
+                                <div class="auto-bt2"></div>
+                                <div class="auto-bt3"></div>
+                                <div class="auto-bt4"></div>
+                            </div>
+                            <div class="manual">
+                                <label for="radio1" class="manual-bth"></label>
+                                <label for="radio2" class="manual-bth"></label>
+                                <label for="radio3" class="manual-bth"></label>
+                                <label for="radio4" class="manual-bth"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="header-four-right">
+                    <a href=""><img src="https://ssl.latcdn.com/img/SJCs3hoGU-82958058_1781861325278324_5497627734530064384_o.jpg" alt=""></a>
+                    <a href=""><img src="https://cdn.pixabay.com/photo/2019/10/18/07/28/eye-shadow-4558443_960_720.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div><!--hết làm phần header-->
+    <div style="clear: both;"></div>
+       <div id="main">  <!-- làm phần main -->
+           <div class="wraper">
+            <div id="left-main">
+                <div id="left-menu">
+                 <h2>SON MÔI - LIPS</h2>
+                 <ul>
+                     <li class="left-main-menu"><a href="">Son dưỡng - Lip balm</a></li>
+                     <li class="left-main-menu"><a href="">Son thỏi - Lipstick</a></li>
+                     <li class="left-main-menu"><a href="">Son kem - Lip Tint</a></li>
+                     <li class="left-main-menu"><a href="">Sản phẩm chăm sóc môi</a></li>
+                 </ul>
+                </div>
+                <div style="clear: both;"></div>
+                <form action="#">
+                 <div id="left-checkbox">
+                     <h2>THƯƠNG HIỆU</h2>
+                        <p class="left-checkbox-item"><input type="checkbox" value="CHANEL"> CHANEL</p>
+                        <p class="left-checkbox-item"><input type="checkbox" value="YSL" > YSL</p>
+                        <p class="left-checkbox-item"><input type="checkbox" value="BIODERMA" > BIODERMA</p>
+                        <p class="left-checkbox-item"><input type="checkbox" value="BLACK ROUGE"> BLACK ROUGE</p>
+                        <p class="left-checkbox-item"><input type="checkbox" value="DIOR"> DIOR</p>
+                        <p class="left-checkbox-item"><input type="checkbox" value="GARNIER"> GARNIER</p>
+                        <p class="left-checkbox-item"><input type="checkbox" value="INNISFREE"> INNISFREE</p>
+                        <p class="left-checkbox-item"><input type="checkbox" value="MERZY"> MERZY</p>
+                        <p class="left-checkbox-item"><input type="checkbox" value="GUCCI"> GUCCI</p>
+                    </div>
+                    <div id="left-checkbox">
+                     <h2>MÀU SẮC</h2>
+                        <p class="left-checkbox-item"><input type="checkbox" value="đỏ"> ĐỎ</p>
+                        <p class="left-checkbox-item"><input type="checkbox" value="vàng"> VÀNG</p>
+                        <p class="left-checkbox-item"><input type="checkbox" value="xanh ngọc"> XANH NGỌC</p>
+                        <p class="left-checkbox-item"><input type="checkbox" value="hồng phấn"> HỒNG PHẤN</p>
+                        <p class="left-checkbox-item"><input type="checkbox" value="xanh rêu"> XANH RÊU</p>
+                        <p class="left-checkbox-item"><input type="checkbox" value="tím"> TÍM</p>
+                        <p class="left-checkbox-item"><input type="checkbox" value="xám"> XÁM</p>
+                        <p class="left-checkbox-item"><input type="checkbox" value="xanh nước biển"> XANH NƯỚC BIỂN</p>
+                        <p class="left-checkbox-item"><input type="checkbox" value="cam"> CAM</p>
+                        <p class="left-checkbox-item"><input type="checkbox" value="bạc"> BẠC</p>
+                    </div>
+                    <div id="left-checkbox">
+                     <h2>XUẤT XỨ</h2>
+                        <p class="left-checkbox-item"><input type="checkbox" value="anh"> ANH</p>
+                        <p class="left-checkbox-item"><input type="checkbox" value="ba lan"> BA LAN</p>
+                        <p class="left-checkbox-item"><input type="checkbox" value="cộng hào séc"> CỘNG HÒA SÉC</p>
+                        <p class="left-checkbox-item"><input type="checkbox" value="đài loan"> ĐÀI LOAN</p>
+                        <p class="left-checkbox-item"><input type="checkbox" value="đức"> ĐỨC</p>
+                        <p class="left-checkbox-item"><input type="checkbox" value="garnier"> GARNIER</p>
+                        <p class="left-checkbox-item"><input type="checkbox" value="hàn quốc"> HÀN QUỐC</p>
+                        <p class="left-checkbox-item"><input type="checkbox" value="hongkong"> HONGKONG</p>
+                        <p class="left-checkbox-item"><input type="checkbox"  value=""> MỸ</p>
+                        <p class="left-checkbox-item"><input type="checkbox" value=""> ÚC</p>
+                        <p class="left-checkbox-item"><input type="checkbox" value=""> Ý</p>
+                    </div>
+                    <div id="submit">
+                        <input type="reset" value="RESET">
+                        <input type="submit" value="SEARCH">
+                    </div>
+                </form>
+            </div>
+            <!--sang phần right main-->
+            <div id="right-main">
+                <!--sang phần right main phần đầu-->
+                <div id="header-right-main">
+                    <h2>SON MÔI - LIPS (97 sản phẩm)</h2>
+                </div>
+                <div style="clear: both; height: 30px;"></div>
+                   <!--sang phần right main phần show sản phẩm-->
+                 <div class="main-right-main">
+                    <div class="content-item">
+                        <a href=""><img class="content-item-img" src="https://lipstick.vn/wp-content/uploads/2020/02/son-chanel-le-camelia-rouge-allure-velvet-357-camelia-rouge-510x510.jpg" alt=""></a>
+                        <div id="name">
+                         <p class="name-item"><a href="">
+                             Son Chanel 357 Rouge Màu Đỏ Tươi</a></p>
+                         <p class="price"><span>1.150.000 đ</span></p>
+                        </div>
+                    </div>
+                     <div class="content-item">
+                     <a href=""><img class="content-item-img" src="https://lipstick.vn/wp-content/uploads/2020/02/son-chanel-le-camelia-rouge-allure-velvet-347.jpg" alt=""></a>
+                    <div id="name">
+                     <p class="name-item"><a href="">Son Chanel 347 Fuchsia </a></p>
+                     <p class="price"><span>1.150.000 đ</span></p>
+                     </div>
+                 </div>
+                 <div class="content-item">
+                     <a href=""><img class="content-item-img" src="https://lipstick.vn/wp-content/uploads/2019/10/son-chanel-817.png" alt=""></a>
+                     <div id="name">
+                         <p class="name-item"><a href="">Son Chanel 817 Rouge Splendide</a></p>
+                         <p class="price"><span>1.150.000 đ</span></p>
+                        </div>
+                 </div>
+                 <div class="content-item">
+                     <a href=""><img class="content-item-img" src="https://lipstick.vn/wp-content/uploads/2020/10/son-chanel-68-unlimited-510x510.jpg" alt=""></a>
+                     <div id="name">
+                         <p class="name-item"><a href="">Son Kem Chanel 68 Unlimited</a></p>
+                         <p class="price"><span>990.000 đ</span></p>
+                     </div>
+                 </div>
+                 <div class="content-item">
+                     <a href=""><img class="content-item-img" src="https://lipstick.vn/wp-content/uploads/2020/12/son-diorific-072-510x653.jpg" alt=""></a>
+                     <div id="name">
+                         <p class="name-item"><a href="">
+                             Son Diorific 072 Shimmery Red</a></p>
+                         <p class="price"><span>999.000 đ</span></p>
+                     </div>
+                 </div>
+                 <div class="content-item">
+                     <a href=""><img class="content-item-img" src="https://lipstick.vn/wp-content/uploads/2019/10/Son-Diorific-069-Delight.png" alt=""></a>
+                     <div id="name">
+                         <p class="name-item"><a href="">
+                             Son Diorific 069 Delight</a></p>
+                         <p class="price"><span>999.000 đ</span></p>
+                     </div>
+                 </div>
+                 <div class="content-item">
+                     <a href=""><img class="content-item-img" src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2020/03/son-dior-addict-lip-tattoo-451-natural-coral-mau-hong-san-ho-5e6f20729d272-16032020134506.png" alt=""></a>
+                     <div id="name">
+                         <p class="name-item"><a href="">Son Dior Addict Lip Tattoo 451 Natural Coral </a></p>
+                         <p class="price"><span>845.000 đ</span></p>
+                     </div>
+                 </div>
+                 <div class="content-item">
+                     <a href=""><img class="content-item-img" src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2020/03/son-dior-436-ultra-trouble-ultra-rouge-vo-do-mau-cam-chay-5e702eb21fa72-17032020085810.jpg" alt=""></a>
+                     <div id="name">
+                         <p class="name-item"><a href="">Son Dior 436 Ultra Trouble - Ultra Rouge </a></p>
+                         <p class="price"><span>890.000 đ</span></p>
+                     </div>
+                 </div>
+                 <div class="content-item">
+                     <a href=""><img class="content-item-img" src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2020/09/son-ysl-rouge-pur-couture-the-slim-sheer-matte-111-corail-explicite-mau-hong-san-ho-5f685c40f2352-21092020145440.jpg" alt=""></a>
+                     <div id="name">
+                         <p class="name-item"><a href="">Son YSL Rouge Pur Couture The Slim Sheer Matte 111 Corail Explicite </a></p>
+                         <p class="price"><span>790.000 đ</span></p>
+                     </div>
+                 </div>
+                 <div class="content-item">
+                     <a href=""><img class="content-item-img" src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2021/01/son-gucci-500-odalie-red-mau-do-tuoi-satin-lipstick-60078a251dcd6-20012021084053.jpg" alt=""></a>
+                     <div id="name">
+                         <p class="name-item"><a href="">Son Gucci 500 Odalie Red – Satin Lipstick</a></p>
+                         <p class="price"><span>990.000 đ</span></p>
+                     </div>
+                 </div>
+                 <div class="content-item">
+                     <a href=""><img class="content-item-img" src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2021/01/son-gucci-401-three-wise-girls-mau-do-hong-600267d930b0a-16012021111313.jpg" alt=""></a>
+                     <div id="name">
+                         <p class="name-item"><a href="">Son Gucci 401 Three Wise Girls </a></p>
+                         <p class="price"><span>990.000 đ</span></p>
+                     </div>
+                 </div>
+                 <div class="content-item">
+                     <a href=""><img class="content-item-img" src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2020/02/son-gucci-rouge-a-levres-voile-mau-25-goldie-red-mau-do-hong-phien-ban-dac-biet-5e58c50fb8b04-28022020144519.jpg" alt=""></a>
+                     <div id="name">
+                         <p class="name-item"><a href="">Son Gucci Rouge À Lèvres Voile Màu 25 Goldie Red </a></p>
+                         <p class="price"><span>1.245.000 ₫</span></p>
+                     </div>
+                 </div>
+                 <div class="content-item">
+                     <a href=""><img class="content-item-img" src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2021/01/son-ysl-rouge-pur-couture-collector-limited-120-take-my-red-away-phien-ban-dac-biet-600697a097c22-19012021152608.jpg" alt=""></a>
+                     <div id="name">
+                         <p class="name-item"><a href="">Son YSL Rouge Pur Couture Collector Limited 120 Take My Red Away</a></p>
+                         <p class="price"><span>890.000 đ</span></p>
+                     </div>
+                 </div>
+                 <div class="content-item">
+                     <a href=""><img class="content-item-img" src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2021/01/son-ysl-114-dial-r-e-d-mau-do-thuan-limited-edition-600690d034eba-19012021145704.jpg" alt=""></a>
+                     <div id="name">
+                         <p class="name-item"><a href="">Son YSL 114 Dial R.E.D Limited Edition</a></p>
+                         <p class="price"><span>889.000 ₫</span></p>
+                     </div>
+                 </div>
+                 <div class="content-item">
+                     <a href=""><img class="content-item-img" src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2020/09/son-ysl-rouge-pur-couture-the-slim-sheer-matte-105-red-uncovered-mau-do-dau-5f6863c071f5e-21092020152640.jpg" alt=""></a>
+                     <div id="name">
+                         <p class="name-item"><a href="">Son YSL Rouge Pur Couture The Slim Sheer Matte 105 Red Uncovered </a></p>
+                         <p class="price"><span>790.000 đ</span></p>
+                     </div>
+                 </div>
+                 <div class="content-item">
+                     <a href=""><img class="content-item-img" src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2021/01/son-gucci-rouge-a-levres-satin-lipstick-mau-300-saie-firelight-cam-dao-60078fcabbd39-20012021090458.jpg" alt=""></a>
+                     <div id="name">
+                         <p class="name-item"><a href="">Son Gucci Rouge À Lèvres Satin Lipstick Màu 300 Saie Firelight </a></p>
+                         <p class="price"><span>990.000 đ</span></p>
+                     </div>
+                 </div>
+             </div>
+             <div style="clear: both;"></div>
+                <!--sang phần số trang sản phẩm-->
+                  <div class="right-main-bottom">
+                    <a class="o1" href="http://127.0.0.1:5500/trang-show-san-pham.html">1</a>
+                    <a class="o1" href="http://127.0.0.1:5500/trang-show-san-pham-thu2.html">2</a>
+                </div>
+            </div>
+           </div><!--hết phần div wraper-->
+           <div style="clear: both;"></div>
+           <!-- làm phần showroom -->
+           <div class="showroom">
+            <div class="wraper">
+                    <center><h1>SHOWROOM</h1> 
+                        <img class="tittle-img" src="https://cocoshop.vn/themes/default/images/icon-header.png" alt="">
+                    </center>
+                    <div class="address-content"> <!--sang làm show 1 phần showroom-->
+                        <center><a href=""><img src="https://cocoshop.vn/assets/bus-directory/80chuaboc.png" alt=""></a></center>
+                        <div class="address-information">
+                            <h3><a href="">80 Chùa Bộc, Hà Nội</a></h3>
+                            <p class="sdt">
+                                0988888083
+                            </p>
+                        </div>
+                    </div> <!--hết làm show 1 phần showroom-->
+    
+                    <div class="address-content"> <!--sang làm show 1 phần showroom-->
+                        <center><a href=""><img src="https://cocoshop.vn/assets/bus-directory/37ngo189giangrvo.png" alt=""></a></center>
+                        <div class="address-information">
+                            <h3><a href="">37 ngõ 189 Giảng Võ, Hà Nội</a></h3>
+                            <p class="sdt">
+                                0988888549
+                            </p>
+                        </div>
+                    </div> <!--hết làm show 1 phần showroom-->
+    
+                    <div class="address-content"> <!--sang làm show 1 phần showroom-->
+                        <center><a href=""><img src="https://cocoshop.vn/assets/bus-directory/258batrieu.png" alt=""></a></center>
+                        <div class="address-information">
+                            <h3><a href="">258 Bà Triệu, Hà Nội</a></h3>
+                            <p class="sdt">
+                                0988888948
+                            </p>
+                        </div>
+                    </div> <!--hết làm show 1 phần showroom-->
+    
+                    <div class="address-content"> <!--sang làm show 1 phần showroom-->
+                        <center><a href=""><img src="https://cocoshop.vn/assets/bus-directory/136caugiay.png" alt=""></a></center>
+                        <div class="address-information">
+                            <h3><a href="">136 Cầu Giấy, Hà Nội</a></h3>
+                            <p class="sdt">
+                                0988888093
+                            </p>
+                        </div>
+                    </div> <!--hết làm show 1 phần showroom-->
+    
+                    <div class="address-content"> <!--sang làm show 1 phần showroom-->
+                        <center><a href=""><img src="https://cocoshop.vn/assets/bus-directory/ngvancu.png" alt=""></a></center>
+                        <div class="address-information">
+                            <h3><a href="">490 Nguyễn Văn Cừ, TP Hạ Long, Quảng Ninh</a></h3>
+                            <p class="sdt">
+                                0988888495
+                            </p>
+                        </div>
+                    </div> <!--hết làm show 1 phần showroom-->
+        </div>
+    </div>
+       </div><!-- hết làm phần main -->
+    <div style="clear: both;"></div>
+     <!-- làm phần cuối trang web  -->
+     <div class="footer">
+        <div class="wraper">
+            <div id="last">
+                <div id="left-last">
+                <a href=""><img src="https://cocoshop.vn/uploads/logofooter-min-1.png" alt=""></a>
+                <img src="https://cocoshop.vn/uploads/1492058103818_8888090.png" alt="">
+            </div>
+            <div id="main-last">
+                <p class="text-last">COCO SHOP là hệ thống mỹ phẩm chính hãng và uy tín có quy mô lớn số 1 Việt Nam,đa dạng các loại mỹ phẩm đến từ các hãng nổi tiếng trên toàn thế giới,,,Đến  với COCOSHOP các bạn có quyền được yên tâm khi mua sắm cũng như được đáp ứng mọi nhu cầu về làm đẹp. Với phương châm luôn nỗ lực vì khách hàng thân yêu, COCOSHOP không ngừng cố gắng để xứng đáng là địa điểm mua săm tin cậy trong lòng các bạn trẻ</p>
+                <p class="text-last">Trực thuộc Công ty TNHH Thương mại và đầu tư xuất nhập khẩu Việt Nam 
+                    Địa chỉ : Số 10, ngõ 59 Hoàng Cầu, P. Ô Chợ Dừa, Q. Đống Đa, Tp. Hà Nội
+                    Phone: +84915156485</p>
+                <p class="text-last">© Bản quyền thuộc về Coco Shop - Chuỗi cửa hàng mỹ phẩm chính hãng làm đẹp. </p>
+            </div>
+            <div id="last-last">
+                <ul>
+                    <li class="last-last-item"><a href="">hướng dẫn mua hàng</a></li>
+                    <li class="last-last-item"><a href="">giải đáp thắc mắc</a></li>
+                    <li class="last-last-item"><a href="">chính sách đổi trả</a></li>
+                    <li class="last-last-item"> Điện thoại: +84-988888290</li>
+                    <li class="last-last-item">Email: cskh@cocoshop.vn</li>
+                    <li class="last-last-item">Website: http://cocoshop.vn</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,642 @@
+.wraper{
+    width: 1200px;
+    margin: 0 auto;
+}
+.wraper1{
+    width: 1600px;
+    margin: 0 auto;
+    background-color: blue;
+}
+/* làm phần header 
+làm phần header đầu tiên */
+/* làm phần background full màn hình */
+.full-background{
+    width: 100%;
+    height: 35px;
+    background-color: black;
+}
+.header-first{
+    width: 1200px;
+    height: 35px;
+    display: inline-flex;
+    justify-content: space-between;
+    line-height: 35px;
+}
+.number-phone{
+    font-size: 16px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: white;
+    margin: 0;
+}
+.header-first-tittle{
+    width: 600px;
+}
+.header-first-tittle p{
+    font-size: 16px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: white;
+    margin: 0;
+}
+.header-first-icon a{
+    text-decoration: none;
+    color: white;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* sang phần header thứ 2*/
+.header-second{
+    width: 1200px;
+    height: 120px;
+    display: inline-flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+/* làm phần logo */
+.logo{
+    width: 13%;
+}
+.logo img{
+    width: 100%;
+    height: 100px;
+}
+/* làm phần search */
+.header-second-search{
+    width: 530px;
+    height: 57px;
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-top: 4px;
+    border-radius: 25px;
+    margin-top: 12px;
+}
+.search{
+    width: 400px;
+    height: 45px;
+    border: none;
+    padding-left: 15px;
+    font-size: 16px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.search:hover{
+    border: none;
+}
+.submit{
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    border-left: 1px solid black;
+}
+ /* làm phần login  */
+ .login{
+     width: 150px;
+     height: 70px;
+     margin-top: 10px;
+ }
+ .icon-login{
+     width: 40px;
+     height: 47px;
+     box-sizing: border-box;
+     padding: 8px 8px 10px 8px;
+     border: 1px solid black;
+     border-radius: 50%;
+     margin: 0 auto;
+     margin-bottom: 5px;
+}
+.icon-login i{
+    font-size: 20px;
+}
+.login-item a{
+    color: black;
+    font-size: 16px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-decoration: none;
+}
+
+/* làm phần mua hàng */
+.buy{
+    width: 45px;
+    height: 47px;
+    box-sizing: border-box;
+    padding: 8px 8px 10px 8px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.buy i{
+    font-size: 22px;
+}
+.buy:hover {
+    border-color: red;
+}
+.buy:hover .fa-shopping-cart{
+    color: red;
+}
+
+/* làm phần header thứ ba */
+.header-three{
+    width: 100%;
+    height: 70px;
+    border-top: 1px solid black ;
+    border-bottom: 1px solid black ;
+}
+.header-three ul{
+    margin: 0;
+}
+.header-three-menu-item{
+    width: 170px;
+    height: 70px;
+    display: inline-block;
+    font-size: 14px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 70px;
+    font-weight: 700;
+    text-align: center;
+}
+.item1{
+    height: 68px;
+    width: 280px;
+    background-color: lightpink;
+    border-bottom: 4px solid black;
+}
+.header-three-menu-item a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+.header-three-menu-item a:hover{
+    color: rgb(155, 23, 23);
+}
+
+/* làm phần header thứ 4 */
+.header-four{
+    width: 100%;
+    height: 430px;
+    background-color: rgba(240, 231, 231, 0.747);
+}
+.header-four-left{
+    width: 370px;
+    float: left;
+}
+.header-four-menu-item{
+    height: 50px;
+    width: 280px;
+    line-height: 50px;
+    display: inline-flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+.header-four-menu-item i{
+    line-height: 50px;
+}
+.header-four-menu-item-text a{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+
+
+ /* làm phần bấm nút chuyển ảnh */
+.header-four-between{
+    float: left;
+}
+.slides{
+    width: 840px;
+    height: 430px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slide{
+    width: 500%;
+    height: 430px;
+    display: flex;
+}
+.slide-img{
+    width: 840px;
+    transition: 1s;
+}
+.header-four-between img{
+    width: 840px;
+    height: 430px;
+    float: left;
+}
+.slide input{
+    display: none;
+}
+.manual{
+    position: absolute;
+    width: 840px;
+    bottom: 300px;
+    display: flex;
+    justify-content: center;
+}
+.manual-bth{
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 40px;
+    transition: 1s;
+}
+.manual-bth:hover{
+    background-color: blue;
+}
+
+
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+/* hết làm phần bấm nút chuyển ảnh */
+
+
+.header-four-right{
+    width: 350px;
+    height: 428px;
+    float: right;
+}
+.header-four-right img{
+    width: 350px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+/* làm phần tự động chuyển ảnh */
+/* làm phần tự động  */
+
+.dieu-huong-tu-dong-auto{
+    position: absolute;
+    width: 840px;
+    bottom: 300px;
+    display: flex;
+    justify-content: center;
+}
+.dieu-huong-tu-dong-auto div{
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+    margin-right: 40px;
+}
+#radio1:checked ~ .dieu-huong-tu-dong-auto .auto-bt1{
+    background-color: blue;
+}
+#radio2:checked ~ .dieu-huong-tu-dong-auto .auto-bt2{
+    background-color: blue;
+}
+#radio3:checked ~ .dieu-huong-tu-dong-auto .auto-bt3{
+    background-color: blue;
+}
+#radio4:checked ~ .dieu-huong-tu-dong-auto .auto-bt4{
+    background-color: blue;
+}
+/* hết làm phần tự động chuyển ảnh */
+
+
+
+.header-four-menu-item:hover .a1{
+    color: red;
+}
+.header-four-menu-item:hover .fa-angle-right{
+    display: none;
+}
+
+
+
+
+
+
+
+/* làm phần dropdown menu */
+.dropdown-menu{
+    overflow: hidden;
+    width: 850px;
+    height: 0;
+    background-color: white;
+    transition: 0.8s;
+}
+.dropdown-menu-item{
+    width: 250px;
+    left: 200px;
+    float: left;
+}
+.dropdown-menu-item li{
+    list-style: none;
+}
+.dropdown-menu-item a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 600;
+
+}
+.dropdown-menu-item a:hover{
+    color: red;
+}
+.header-four-menu-item:hover .dropdown-menu{
+    height: 416px;
+}
+.d1{
+    position: absolute;
+    left: 280px;
+    top: -16px;
+}
+.d2{
+    
+    position: absolute;
+    left: 280px;
+    top: -67px;
+}
+.d3{
+    
+    position: absolute;
+    left: 280px;
+    top: -118px;
+}
+.d4{
+    
+    position: absolute;
+    left: 280px;
+    top: -169px;
+}
+.d5{
+    
+    position: absolute;
+    left: 280px;
+    top: -220px;
+}
+.d6{
+    
+    position: absolute;
+    left: 280px;
+    top: -271px;
+}
+.d7{
+   
+    position: absolute;
+    left: 280px;
+    top: -322px;
+}
+.d8{
+    
+    position: absolute;
+    left: 280px;
+    top: -373px;
+}
+
+
+
+/*làm phần main*/
+/*sang phần content*/
+.content{
+    height: 6234px;
+}
+/*sang phần content bên trái*/
+.left-content{
+    width: 25%;
+    float: left;
+}
+.left-content h4{
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.left-content li{
+    height: 19px;
+    line-height: 19px;
+    padding: 10px 30px 10px 30px;
+    list-style: none;
+    border-bottom: 1px solid black;
+}
+.left-content ul{
+    padding-left: 0;
+    margin-top: 5px;
+}
+.left-content a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: black;
+}
+.left-content a:hover{
+color: brown;
+}
+.left-content li:hover{
+    border-left: 4px solid brown;
+}
+/*sang phần content bên phải*/
+.right-content-1{
+    width: 70%;
+    height: 5850px;
+    float: right;
+    border: 1px solid rgba(153, 151, 151, 0.678);
+    border-radius: 4px;
+}
+.right-content-information{
+    width: 97%;
+    margin: 0 auto;
+}
+.right-content-information h2{
+    margin-top: 6px;
+    text-align: center;
+}
+/*làm phần đầu tiên đến muốn chăm sóc mụn*/
+.information-1{
+    width: 800px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.information-1 p{
+    font-size: 13px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.information-1-icon{
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+.information-1-icon i{
+    font-size: 20px;
+    color: rgba(41, 41, 240, 0.849);
+}
+.information-1-icon i:hover{
+    color: red;
+}
+/*hết phần đầu tiên đến muốn chăm sóc mụn*/
+/*làm phần tiếp theo đến hết hình ảnh*/
+.information-2{}
+.information-2-content p{
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding-bottom: 15px;
+}
+.information-2-picture{
+    height: 315px;
+    text-align: center;
+}
+.information-2-picture img{
+    width: 459px;
+    height: 272px;
+    display: block;
+}
+/*hết phần tiếp theo đến hết hình ảnh*/
+/*làm phần danh sách*/
+.information-3{
+    border: 1px solid black;
+    padding-left: 10px;
+    background-color: #f3f3f3;
+    border-radius: 20px;
+    
+}
+.ol-1{
+    margin-top: 5px;
+}
+.information-3-tittle p{
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.tittle{
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(214, 216, 218, 0.788);
+}
+.tittle-item{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+/* hết làm phần danh sách*/
+.information-4{
+    padding-top: 20px;
+}
+.information-4 span{
+    font-size: 18px;
+    font-family: Calibri,sans-serif;
+}
+.information-4 img{
+    width: 600px;
+    height: 401px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.information-4 p{
+    color: rgb(161, 19, 19);
+    font-size: 18px;
+    font-family: Calibri,sans-serif;
+    font-weight: bold;
+}
+/*sang phần dưới nội dung bài đọc*/
+.right-content-2{
+    width: 69.2%;
+    float: right;
+    margin-top: 15px;
+    border: 1px solid rgba(153, 151, 151, 0.678);
+    border-radius: 4px;
+    padding-left: 10px;
+}
+.right-content-2 p{
+    font-size: 12px;
+    font-family: Calibri,sans-serif;
+}
+.right-content-2 span{
+    font-size: 12px;
+    font-family: Calibri,sans-serif;
+    display: block;
+    margin-bottom: 10px;
+}
+.right-content-2-item{
+    width: 280px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.star i{
+    color: yellow;
+}
+/*hết phần dưới nội dung bài đọc*/
+/*sang phần danh sách với drop down*/
+.right-content-3{
+    width: 69.2%;
+    float: right;
+    margin-top: 15px;
+    border: 1px solid rgba(153, 151, 151, 0.678);
+    border-radius: 4px;
+    padding-left: 10px;
+}
+.right-content-3 p{
+    font-size: 16px;
+    font-weight: bold;
+}
+.right-content-3 li{
+    margin-bottom: 10px;
+    list-style: none;
+}
+.right-content-3 a{
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.right-content-3 a:hover{
+    color: rgba(41, 41, 231, 0.815);
+}
+/*sang làm phần cuối*/
+#footer{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+}
+#last{
+    display: inline-flex;
+    line-height: 20px;
+}
+#left-last{
+    width: 20%;
+    height: 100px;
+    padding-top: 30px;
+}
+#main-last{
+    width: 60%;
+}
+.text-last{
+    color: white;
+}
+.last-last-item a{
+    text-decoration: none;
+    color: white;
+}
+.last-last-item{
+    color: white;
+    text-transform: uppercase;
+    line-height: 30px;
+}

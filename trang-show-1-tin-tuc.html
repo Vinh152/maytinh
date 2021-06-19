@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOW 1 TIN TỨC</title>
+    <link rel="stylesheet" href="./CSS/trang-show-1-tin-tuc.css">
+    <link rel="stylesheet" href="./ICON/fontawesome-free-5.15.2-web/fontawesome-free-5.15.2-web/css/all.min.css">
+</head>
+<body>
+    <script>
+        function login() {
+            if(confirm("BẠN ĐÃ CÓ TÀI KHOẢN CHƯA"))
+            {
+                window.open("http://127.0.0.1:5500/trang-login.html")
+            }
+            else{
+                alert("BẠN CHƯA CÓ TÀI KHOẢN VUI LÒNG ĐĂNG KÝ")
+            }
+        }
+    </script>
+    <script>
+        var couter=1;
+        setInterval(function() {
+            document.getElementById('radio' + couter).checked=true;
+            couter++;
+            if(couter>4){
+                couter=1;
+            }
+        }, 2000)
+    </script>
+    <div class="header"><!--làm phần header-->
+        <div class="full-background"><!--làm phần full màn hình-->
+            <div class="wraper">
+                <div class="header-first">   <!--làm phần header đầu tiên-->
+                    <p class="number-phone"><i class="fas fa-phone-square-alt"></i> 0988888290</p>
+                    <div class="header-first-tittle">
+                        <marquee><p>Coco Shop - Hệ thống thương hiệu mỹ phẩm chính hãng, với 600 thương hiệu mỹ phẩm - uy tín - chất lượng Top 1 Việt Nam </p></marquee>
+                    </div>
+                    <div class="header-first-icon">
+                        <a href="">VI</a>
+                        <a href="">EN</a>
+                    </div>
+                </div> <!--hết làm phần header đầu tiên-->
+            </div><!--hết div wraper-->
+        </div><!--hết làm phần full màn hình-->
+    
+        <div class="wraper">
+            <div class="header-second"> <!--làm phần header thứ 2-->
+                <div class="logo">
+                    <a href=""><img src="https://cocoshop.vn/uploads/logohead-min.png" alt=""></a>
+                </div>
+                <div class="header-second-search">
+                   <form action="#">
+                    <input class="search" type="text" placeholder="Tìm kiếm.....">
+                    <input class="submit" type="submit" value="Search">
+                   </form>
+                </div>
+                <div class="login">
+                    <div class="icon-login">
+                        <i class="fas fa-user-alt"></i>
+                    </div>
+                    <div class="login-item">
+                        <a onclick="login()" href="">Đăng nhập/Đăng ký</a>
+                    </div>
+                </div>
+                <div class="buy">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div> <!--làm phần header thứ 2-->
+        </div> <!--hết div wraper-->
+    
+        <!-- làm phần header thứ ba -->
+        <div class="header-three">
+            <div class="wraper">
+                <div class="header-three-menu">
+                    <ul>
+                        <li class="header-three-menu-item item1">DANH MỤC SẢN PHẨM <i class="fas fa-list-ul"></i></li>
+                        <li class="header-three-menu-item"><a href="">thương hiệu</a> </li>
+                        <li class="header-three-menu-item"><a href="">khuyến mại</a> </li>
+                        <li class="header-three-menu-item"><a href="http://127.0.0.1:5500/trang-tin-tuc.html">xu hướng làm đẹp</a> </li>
+                        <li class="header-three-menu-item"><a href="">tra cứu đơn hàng</a> </li>
+                        <li class="header-three-menu-item"><a href="">liên hệ</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- làm phần header thứ tư -->
+        <div class="header-four">
+            <div class="wraper1">
+                <div class="header-four-left">
+                    <ul>
+                        <li class="header-four-menu-item">
+                           <div class="header-four-menu-item-text">
+                               <img src="https://cocoshop.vn/assets/shops/2019_07/trangdiem-min_1.png" alt="">
+                               <a class="a1" href="">trang điểm - makeup</a>
+                           </div>
+                           <i class="fas fa-angle-right"></i>
+                           <div class="dropdown-menu d1"> <!--làm phần dropdown-->
+                            <div class="dropdown-menu-item">
+                                <ul>
+                                    <li class="drowdown-item"><a href="">Kem lót - Makeup prmer</a></li>
+                                    <li class="drowdown-item"><a href="">Phấn nước - Cushion</a></li>
+                                    <li class="drowdown-item"><a href="">Phấn phủ - Powder</a></li>
+                                    <li class="drowdown-item"><a href="">Kẻ mắt - Eyeliner</a></li>
+                                    <li class="drowdown-item"><a href="">Mascara</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown-menu-item">
+                                <ul>
+                                    <li class="drowdown-item"><a href="">Kem nền - BB - CC</a></li>
+                                    <li class="drowdown-item"><a href="">Che khuyết điểm</a></li>
+                                    <li class="drowdown-item"><a href="">Phấn mắt - Phấn má</a></li>
+                                    <li class="drowdown-item"><a href="">Kẻ mày - Eyebrown</a></li>
+                                    <li class="drowdown-item"><a href="">Others</a></li>
+                                </ul>
+                            </div>
+                        </div> <!--hết làm phần dropdown-->
+                        </li>
+    
+    
+                        <li class="header-four-menu-item">
+                            <div class="header-four-menu-item-text">
+                                <img src="https://cocoshop.vn/assets/shops/2020_04/trangdiemmoi.png" alt="">
+                                <a class="a1" href="">son môi - lips</a>
+                            </div>
+                            <i class="fas fa-angle-right"></i>
+                            <div class="dropdown-menu d2"> <!--làm phần dropdown-->
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Son dưỡng - Lipbalm</a></li>
+                                        <li class="drowdown-item"><a href="">Son kem - Lip Tint</a></li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Son thỏi - Lipstick</a></li>
+                                        <li class="drowdown-item"><a href="">Sản phẩm chăm sóc môi</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div> <!--hết làm phần dropdown-->
+                         </li>
+    
+    
+                         <li class="header-four-menu-item ">
+                            <div class="header-four-menu-item-text">
+                                <img src="https://cocoshop.vn/assets/shops/2019_07/chamsocda-min_1.png" alt="">
+                                <a  class="a1" href="">chăm sóc da - skin care</a>
+                            </div>
+                            <i class="fas fa-angle-right"></i>
+                            <div class="dropdown-menu d3"> <!--làm phần dropdown-->
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Tẩy trang - Micellar...</a></li>
+                                        <li class="drowdown-item"><a href="">Tẩy da chết - Scrub</a></li>
+                                        <li class="drowdown-item"><a href="">Sữa dưỡng - Lotion</a></li>
+                                        <li class="drowdown-item"><a href="">Kem dưỡng - Faclal Cream</a></li>
+                                        <li class="drowdown-item"><a href="">Kem mắt - Eye Cream</a></li>
+                                        <li class="drowdown-item"><a href="">Mặt nạ - Mask</a></li>
+                                        <li class="drowdown-item"><a href="">Kem chống nắng</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Sữa rửa mặt - Cleansing...</a></li>
+                                        <li class="drowdown-item"><a href="">Nước hoa hồng - Toner</a></li>
+                                        <li class="drowdown-item"><a href="">Serum</a></li>
+                                        <li class="drowdown-item"><a href="">Kem trị mụn - Acne...</a></li>
+                                        <li class="drowdown-item"><a href="">Dưỡng mi - Eyelash Care</a></li>
+                                        <li class="drowdown-item"><a href="">Xịt khoáng - Facial Mist</a></li>
+                                        <li class="drowdown-item"><a href="">Kem trị sẹo - Trị nám</a></li>
+                                    </ul>
+                                </div>
+                            </div> <!--hết làm phần dropdown-->
+                         </li>
+    
+    
+                         <li class="header-four-menu-item">
+                            <div class="header-four-menu-item-text">
+                                <img src="https://cocoshop.vn/assets/shops/2019_07/chamsoccothe-min_1.png" alt="">
+                                <a class="a1" href="">chăm sóc cơ thể - body</a>
+                            </div>
+                            <i class="fas fa-angle-right"></i>
+                            <div class="dropdown-menu d4"> <!--làm phần dropdown-->
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Sữa tắm - Shower Gel</a></li>
+                                        <li class="drowdown-item"><a href="">Tẩy da chết body - Body...</a></li>
+                                        <li class="drowdown-item"><a href="">Body Mist</a></li>
+                                        <li class="drowdown-item"><a href="">Lăn xịt khử mùi -...</a></li>
+                                        <li class="drowdown-item"><a href="">Dung dịch vệ sinh</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Xà phòng - Soap</a></li>
+                                        <li class="drowdown-item"><a href="">Dưỡng thể - Body Lotlon</a></li>
+                                        <li class="drowdown-item"><a href="">Tẩy lông - Waxing Cream</a></li>
+                                        <li class="drowdown-item"><a href="">Kem tan mỡ - Trị rạn -...</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div> <!--hết làm phần dropdown-->
+                         </li>
+    
+    
+                         <li class="header-four-menu-item">
+                            <div class="header-four-menu-item-text">
+                                <img src="https://cocoshop.vn/assets/shops/2019_07/chamsoctocmin.png" alt="">
+                                <a class="a1" href="">chăm sóc tóc - hair</a>
+                            </div>
+                            <i class="fas fa-angle-right"></i>
+                            <div class="dropdown-menu d5"> <!--làm phần dropdown-->
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Dầu gội/xả...</a></li>
+                                        <li class="drowdown-item"><a href="">Thuốc nhuộn tóc - Hair...</a></li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Dưỡng tóc</a></li>
+                                        <li class="drowdown-item"><a href="">Ủ tóc</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div> <!--hết làm phần dropdown-->
+                         </li>
+    
+                         <li class="header-four-menu-item">
+                            <div class="header-four-menu-item-text">
+                                <img src="https://cocoshop.vn/assets/shops/2019_07/dungcu-min.png" alt="">
+                                <a  class="a1" href="">dụng cụ - tools</a>
+                            </div>
+                            <i class="fas fa-angle-right"></i>
+                            <div class="dropdown-menu d6"> <!--làm phần dropdown-->
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Bông trang điểm</a></li>
+                                        <li class="drowdown-item"><a href="">Kẹp mi- Dao cạo</a></li>
+                                        <li class="drowdown-item"><a href="">Bông tẩy trang</a></li>
+                                        <li class="drowdown-item"><a href="">Giấy thấm dầu</a></li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Dụng cụ chăm sóc da</a></li>
+                                        <li class="drowdown-item"><a href="">Cọ trang điểm</a></li>
+                                        <li class="drowdown-item"><a href="">Mi giả - Kích mí </a></li>
+                                        <li class="drowdown-item"><a href="">Túi/khay - Bộ chiết mỹ phẩm</a></li>
+                                        <li class="drowdown-item"><a href="">Mascara</a></li>
+                                    </ul>
+                                </div>
+                            </div> <!--hết làm phần dropdown-->
+                         </li>
+    
+                         <li class="header-four-menu-item">
+                            <div class="header-four-menu-item-text">
+                                <img src="https://cocoshop.vn/assets/shops/2019_07/nuoschoa-min.png" alt="">
+                                <a class="a1" href="">nước hoa - perfume</a>
+                            </div>
+                            <i class="fas fa-angle-right"></i>
+                            <div class="dropdown-menu d7"> <!--làm phần dropdown-->
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Nước hoa body</a></li>
+                                        <li class="drowdown-item"><a href="">Nước hoa nữ</a></li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Nước hoa nam</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div> <!--hết làm phần dropdown-->
+                         </li>
+    
+                         <li class="header-four-menu-item">
+                            <div class="header-four-menu-item-text">
+                                <img src="https://cocoshop.vn/assets/shops/2019_07/spkhac-min_1.png" alt="">
+                                <a class="a1" href="">sản phẩm khác - others</a>
+                            </div>
+                            <i class="fas fa-angle-right"></i>
+                            <div class="dropdown-menu d8"> <!--làm phần dropdown-->
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Vitamin</a></li>
+                                        <li class="drowdown-item"><a href="">Kem đánh răng</a></li>
+                                        <li class="drowdown-item"><a href="">Các sản phẩm khác</a></li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Trà giảm cân</a></li>
+                                        <li class="drowdown-item"><a href="">Xịt thơm quần áo</a></li>
+                                        <li class="drowdown-item"><a href="">Viên uống DHC</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div> <!--hết làm phần dropdown-->
+                         </li>
+                    </ul>
+                </div>
+                <div class="header-four-between">
+                    <div class="slides">
+                        <div class="slide">
+                            <input type="radio" name="check" id="radio1">
+                            <input type="radio" name="check" id="radio2">
+                            <input type="radio" name="check" id="radio3">
+                            <input type="radio" name="check" id="radio4">
+    
+    
+                            <div class="slide-img first">
+                                <img src="https://cocoshop.vn/uploads/slider/images/bnw.jpg" alt="">
+                            </div>
+                            <div class="slide-img ">
+                                <img src="https://cocoshop.vn/uploads/slider/images/bnbg-web.jpg" alt="">
+                            </div>
+                            <div class="slide-img ">
+                                <img src="https://cocoshop.vn/uploads/slider/images/bnw2.jpg" alt="">
+                            </div>
+                            <div class="slide-img ">
+                                <img src="https://cdn.pixabay.com/photo/2015/11/26/00/54/cosmetics-1063134_960_720.jpg" alt="">
+                            </div>
+    
+                            <div class="dieu-huong-tu-dong-auto">
+                                <div class="auto-bt1"></div>
+                                <div class="auto-bt2"></div>
+                                <div class="auto-bt3"></div>
+                                <div class="auto-bt4"></div>
+                            </div>
+                            <div class="manual">
+                                <label for="radio1" class="manual-bth"></label>
+                                <label for="radio2" class="manual-bth"></label>
+                                <label for="radio3" class="manual-bth"></label>
+                                <label for="radio4" class="manual-bth"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="header-four-right">
+                    <a href=""><img src="https://ssl.latcdn.com/img/SJCs3hoGU-82958058_1781861325278324_5497627734530064384_o.jpg" alt=""></a>
+                    <a href=""><img src="https://cdn.pixabay.com/photo/2019/10/18/07/28/eye-shadow-4558443_960_720.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div><!--hết làm phần header-->
+    <div style="clear: both;"></div>
+    <!-- làm phần main -->
+    <div class="wraper">
+        <div class="content"><!--sang phần làm main-->
+            <div class="left-content">
+                <h4>Xu hương làm đẹp</h4>
+                <ul>
+                    <li class="left-item"><a href="">Trang điểm</a></li>
+                    
+                    <li class="left-item"><a href="">Chăm sóc da</a></li>
+                    
+                    <li class="left-item"><a href="">Cảm hứng</a></li>
+                    
+                    <li class="left-item"><a href="">Tin tức</a></li>
+                    
+                    <li class="left-item"><a href="">Cẩm nang làm đẹp</a></li>
+                </ul>
+            </div>
+            <div class="right-content-1">
+                <div class="right-content-information">
+                    <h2>Da mụn đừng vội lo lắng "Cách chăm sóc da mụn hiệu quả"</h2>
+                    <div class="information-1"> <!--làm phần đầu tiên đến muốn chăm sóc mụn-->
+                       <p>Thứ tư - 02/12/2020 13:53</p>
+                       <div class="information-1-icon">
+                           <a href=""><i class="fas fa-envelope"></i></a>
+                           <a href=""><i class="fas fa-print"></i></a>
+                           <a href=""><i class="far fa-save"></i></a>
+                       </div>
+                    </div> <!--hết phần đầu tiên đến muốn chăm sóc mụn-->
+                    <div class="information-2"><!--làm phần tiếp theo đến hết hình ảnh-->
+                        <div class="information-2-content">
+                            <p>Muốn chăm sóc da mụn tốt đầu tiên bạn phải hiểu rõ làn da của mình trước đã.
+                            Cũng như muốn điều trị mụn trước hết bạn cần biết mụn từ đâu mà có, do đâu 
+                            mà hình thành và phát triển? Tại sao tình trạng mụn của bạn lại không dứt 
+                            lại ngày càng nặng hơn? Bài viết này sẽ giúp bạn tìm ra cách chăm sóc da hợp
+                            cho làn da của bạn, giúp cải thiện tình trạng mụn.</p>
+                        </div>
+                        <div class="information-2-picture">
+                           <center><img src="https://cocoshop.vn/uploads/news/2020_12/cach-cham-soc-da-mun-hieu-qua.jpg" alt=""></center>
+                            <span>Da mụn đừng vội lo lắng "Cách chăm sóc da mụn hiệu quả"</span>
+                        </div>
+                    </div> <!--hết phần tiếp theo đến hết hình ảnh-->
+                    <div class="information-3"><!--làm phần danh sách-->
+                        <div class="information-3-tittle">
+                            <p><i class="fas fa-list-ol"></i> mục lục</p>
+                        </div>
+                        <ol class="ol-1">
+                            <li class="tittle">I.Nguyên nhân gây mụn</li>
+                            <div>
+                                <ol style="margin-top: 6px;">
+                                    <li class="tittle-item">1.1 Sử dụng sản phẩm chăm sóc da không phù hợp</li>
+                                    <li class="tittle-item">1.2 Không vệ sinh cọ trang điểm</li>
+                                    <li class="tittle-item">1.3 Các vật tiếp xúc với da mặt</li>
+                                    <li class="tittle-item">1.4 Thức khuya và có chế độ ăn uống không phù hợp</li>
+                                </ol>
+                            </div>
+                            <li class="tittle">II.Cách chăm sóc da mặt hiệu quả</li>
+                            <ol style="margin-top: 6px;">
+                                <li class="tittle-item">2.1 Rửa mặt 2 lần/ngày</li>
+                                <li class="tittle-item">2.2 Dùng nước hoa hồng</li>
+                                <li class="tittle-item">2.3 Dùng kem dưỡng da</li>
+                                <li class="tittle-item">2.4 Sử dụng kem trị mụn cho da nhờn mụn</li>
+                                <li class="tittle-item">2.5 Dùng giấy thấm dầu</li>
+                            </ol>
+                        </ol>
+                    </div><!--hết phần danh sách-->
+                    <div class="information-4">
+                        <span>Muốn chăm sóc da mụn tốt đầu tiên bạn phải hiểu rõ làn da của mình
+                            trước đã. Cũng như muốn điều trị mụn trước hết bạn cần biết mụn từ đâu 
+                            mà có, do đâu mà hình thành và phát triển? Tại sao tình trạng mụn của bạn
+                           lại không dứt lại ngày càng nặng hơn? Bài viết này sẽ giúp bạn tìm ra cách chăm sóc 
+                          da hợp lý cho làn da của bạn, giúp cải thiện tình trạng mụn.</span>
+                          <center><img src="https://cocoshop.vn/uploads/news/2020_12/cach-cham-soc-da-mun-hieu-qua-3.jpg" alt=""></center>
+                          <p>I. Nguyên nhân gây ra mụn</p>
+                          <br>
+                          <span>
+                            Da của bạn thuộc da gì? Da dầu, da khô, da thường, da hỗn hợp. Làn da của chúng ta rất
+                             dễ bị ảnh hưởng từ những tác động bên ngoài, khói bụi, ô nhiễm môi trường, ánh nắng… 
+                             Tất cả những tác nhân này đều dẫn đến bít tắc lỗ chân lông và gây ra mụn trứng cá, mụn đầu đen, mụn bọc, 
+                             mụn sưng, mụn mủ. Nguyên nhân dẫn đến mụn do đâu?
+                          </span>
+                          <br>
+                          <p>1.1 Sử dụng sản phẩm chăm sóc da không phù hợp</p>
+                          <br>
+                          <span>Phổ biến nhất là kem dưỡng da do sản phẩm này có nhiều loại kết cấu khác nhau phù hợp với từng loại da.
+                               Ví dụ như khi bạn thuộc da dầu nhưng lại chọn loại kem dành cho da khô. Da dầu cần những sản phẩm dưỡng mỏng
+                                nhẹ thấm nhanh tránh gây bí tắc. Kem dành cho da khô thường có kết cấu đặc, độ ẩm cao, lâu thấm. Vì vậy nó nằm
+                                 trên bề mặt da, cùng với dầu tự nhiên do da tiết ra trở thành một lớp màn khiến da “ngộp thở”. Để an toàn, bạn nên dùng
+                                  những loại mỹ phẩm có ghi “Non comedogenic” thì sẽ không chứa các thành phần gây bí tắc da.</span>
+                                  <br>
+                                 <center><img src="https://cocoshop.vn/uploads/news/2020_12/cach-cham-soc-da-mun-hieu-qua-1.jpg" alt=""></center> 
+                                 <p>1.2 Không vệ sinh cọ trang điểm</p>
+                                 <br>
+                                 <span>Các cô nàng tuổi trưởng thành khi đi làm hầu hết đều trang điểm hàng ngày. Cọ trang điểm chính là nơi tích
+                                      tụ rất nhiều tế bào chết, kem phấn trang điểm cùng vi khuẩn. Hãy thử tưởng tượng mỗi lần dùng cọ là mỗi lần bạn đưa vi khuẩn lên mặt.
+                                       Vì vậy hãy chú ý vệ sinh cọ và các dụng cụ trang điểm thường xuyên.</span>
+                                       <br>
+                                       <p>1.3 Các vật dụng tiếp xúc với da mặt</p>
+                                       <br>
+                                       <span>Tất cả những thứ tiếp xúc với da mặt phải đảm bảo sạch sẽ để không gây mụn.
+                                            Bạn biết điều này nhưng vẫn có những thứ “vô tình” đưa lên mặt mà bạn không
+                                             để ý tới. Ví dụ như điện thoại. Với hàng tỉ vi khuẩn lúc nhúc, điện thoại
+                                              dơ hơn bạn tưởng nhiều. Hoặc khi bạn chống cằm thì cũng đã đưa vi khuẩn từ 
+                                              tay lên mặt. Vì vậy, hãy chú ý nhiều hơn và đảm bảo giữ vệ sinh cho da mặt.</span>
+                                              <br>
+                                              <center><img src="https://cocoshop.vn/uploads/news/2020_12/cach-cham-soc-da-mun-hieu-qua-2.jpg" alt=""></center> 
+                                              <p>1.4 Thức khuya và có chế độ ăn uống không phù hợp</p>
+                                              <br>
+                                              <span>Điều này có rất nhiều người biết nhưng vẫn không thể thực hiện được chế độ sinh hoạt và ăn uống lành mạnh. 
+                                                  Sau 11h đêm là thời gian cơ thể bắt đầu đào thải độc tố. Nếu bạn bỏ qua khoảng thời gian này thì lượng độc tố 
+                                                  trong cơ thể không được đào thải gây nên mụn. Bên cạnh đó, tất cả những đồ ăn đồ uống cay nóng, nhiều đường, 
+                                                  nhiều dầu mỡ và chứa chất kích thích đều khiến da tiết nhiều dầu hơn. Đó là lí do tại sao da bạn đã mụn lại càng mụn.</span>
+                                            <p>II. Cách chăm sóc da mụn hiệu quả</p>
+                                            
+                                            <p>2.1 Rửa mặt 2 lần/ngày</p>
+    
+                                            <span>Để bảo vệ da nhờn mụn trước các vi khuẩn và bụi bẩn thì đầu tiên là bạn cần rửa
+                                                 mặt đúng cách thường xuyên mỗi ngày hai lần với sữa rửa mặt. Nên rửa mặt bằng nước
+                                                  ấm tránh dùng nước nóng khiến da bị khô. Khi rửa tránh chà xát quá mạnh trên da có thể
+                                                   khiến da bị tổn thương. Nguyên nhân gây mụn không chỉ là do da nhờn và bẩn nên không phải cứ rửa mặt thường xuyên là sẽ không có mụn.
+                                                Bạn cũng nên rửa sạch da mặt sau khi tập thể dục hoặc hoạt động mạnh tạo ra nhiều mồ hôi. 
+                                                Do mồ hôi có thể kích thích mụn trứng cá phát triển. Nếu không có sẵn nước và sữa rửa mặt
+                                                 thì bạn có thể dùng khăn ướt để lau mặt sau khi hoạt động mạnh. Tuy nhiên nên ưu tiên sử dụng
+                                                  các loại khăn ướt không mùi để tránh gây kích ứng da.</span>
+                                                  <center><img src="https://cocoshop.vn/uploads/news/2020_12/cach-cham-soc-da-mun-hieu-qua-4.jpg" alt=""></center> 
+                                                  <span>Khi lựa chọn sữa rửa mặt cho da mụn bạn nên chọn là loại tẩy rửa nhẹ nhàng có độ pH 5 – 6.5. Những loại sữa rửa mặt có 
+                                                      nhiều chất tẩy rửa có thể kích hoạt da tăng sản xuất dầu nhờn hơn. Các loại sữa rửa mặt thường không có ích trong việc giảm
+                                                       bớt dầu nhờn trên da thì bạn có thể thử các loại có chứa axit như bezoyl peroxide, axit salicylic, axit glycolic hoặc axit beta-hydroxy. 
+                                                       Các loại sữa rửa mặt này rất phù hợp với da nhờn bị mụn lâu năm. Nhưng bạn nên mua một tuýp nhỏ dùng thử xem da có bị kích ứng không do trong 
+                                                       các thành phần này có thể gây kích ứng trên da.</span>
+                                                <p>2.2 Dùng nước hoa hồng</p>
+                                                <br>
+                                                <span>Nước hoa hồng giúp kiểm soát dầu thừa trên da và thu nhỏ lỗ chân lông tạm thời nên người có da nhờn mụn lỗ chân lông to rất nên dùng. Tuy nhiên bạn nên dùng nước hoa hồng trên các vùng da nhiều dầu nhờn hơn như vùng chữ T, tránh các vùng da khô khác trên mặt.
+                                                   <br> Bạn có thể thấm nước hoa hồng vào bông tẩy trang rồi lau lại da mặt và cổ. Bước chăm sóc này nên áp dụng sau khi rửa mặt nhưng trước khi dùng kem dưỡng ẩm hoặc bôi kem trị mụn trên da.</span>
+                                                   <center><img src="https://cocoshop.vn/uploads/news/2020_12/cach-cham-soc-da-mun-hieu-qua-5.jpg" alt=""></center> 
+                                                   <span>Những loại nước hoa hồng phù hợp với da mụn như: Nước hoa hồng Effaclar La Roche-Posay, nước hoa hồng trị mụn Caryophy, nước hoa hồng cho da mụn Meishoku…</span>
+                                                   <p>2.3 Dùng kem dưỡng da</p>
+                                                   <br>
+                                                   <span>Đối với da nhờn mụn thì bạn nên ưu tiên chọn các loại kem dưỡng không chứa dầu. Nên ưu tiên các sản
+                                                        phẩm có chữ “FREE-Oil” trên kem dưỡng ẩm, kem chống nắng và đồ trang điểm. Bên cạnh đó, bạn cũng nên ưu 
+                                                        tiên sản phẩm có nhãn NON-comedogenic (không gây bít lỗ chân lông) giúp giảm khả năng gây mụn.</span>
+                                                        <center><img src="https://cocoshop.vn/uploads/news/2020_12/cach-cham-soc-da-mun-hieu-qua-6.jpg" alt=""></center> 
+                                                        <p>2.4 Sử dụng kem bôi trị mụn cho da nhờn mụn</p>
+                                                        <br>
+                                                        <span>Da nhờn mụn và lỗ chân lông to thường đi đôi với nhau. Sử dụng kem bôi trị mụn cho da cũng có thể cải thiện lỗ chân lông to của bạn.
+                                                             Dù bạn khó có thể thu nhỏ lỗ chân lông như ban đầu nhưng bạn có thể khiến chúng trở nên nhỏ hơn một chút.
+                                                           <br> Có thể sử dụng thuốc trị mụn có chứa: Retinoids, axit salicylic, axit alpha hydroxy (AAH) dạng gel.
+                                                             Do dạng gel sẽ khiến da đỡ cảm giác nặng và gây ra dầu thừa trên da nhờn mụn.
+                                                            Các loại kem bôi vừa trị mụn vừa thu nhỏ lỗ chân lông khi có chứa thành phần: Retinoids và axit salicylic giúp giảm thiểu lỗ chân lông nở to.</span>
+                                                            <p>2.5 Dùng giấy thấm dầu</p>
+                                                            <br>
+                                                            <span>Giấy thấm dầu được xem là một giải pháp tuyệt vời để loại bỏ dầu trên da mà không gây khô da.
+                                                                 Dùng giấy thấm dầu trên vùng da nhiều nhờn như trán, mũi, cằm. Nhưng bạn nên thấm nhẹ vào vùng da dầu trong 15 – 20 
+                                                                 giây thay vì chà xát mạnh trên da dễ gây lây nhiễm mụn.
+                                                               <br> Chăm sóc da mụn luôn cần sự tỉ mỉ và sự kiên trì, những cô nàng đang điều trị mụn đừng nên nóng vội. Chỉ cần bạn tuân thủ
+                                                                 đúng theo những quy trình và sử dụng những sản phẩm phù hợp với làn da của mình sẽ giúp da bạn khỏe lên từng ngày và đánh bay các loại mụn.</span>
+    
+                    </div>
+                </div>
+            </div><!--hết phần nôi dung bài đọc-->
+            <div style="clear: both;"></div>
+            <div class="right-content-2"> <!--sang phần dưới nội dung bài đọc-->
+                <div class="item-right-content-2">
+                    <p>Tổng số điểm của bài viết là: 5 trong 1 đánh giá</p>
+                <span>Xếp hạng: 5 - 1 phiếu bầu</span>
+                
+                <div class="right-content-2-item">
+                    <div class="star">
+                        <i class="fas fa-star s1"></i>
+                        <i class="fas fa-star s2"></i>
+                        <i class="fas fa-star s3"></i>
+                        <i class="fas fa-star s4"></i>
+                        <i class="fas fa-star s5"></i>
+                    </div>
+                    <span>Click để đánh giá bài viết</span>
+                </div>
+                </div>
+            </div><!--hết phần dưới nội dung bài đọc-->
+            <div style="clear: both;"></div>
+                <!--làm phần danh sách + drop down-->
+                <div class="right-content-3">
+                    <p>Những tin cũ hơn</p>
+                    <ul>
+                        <li class="list"><a href="">> Hướng dẫn cách mix và layer các sản phẩm skincare (16/11/2020)</a>
+                        </li>
+                        <li class="list"><a href="">> Cushion - Foudation cực tiệp màu và giàu ẩm (17/10/2020)</a>
+                        </li>
+                        <li class="list"><a href="">> Tẩy da chết và những điều nàng có thể chưa biết (14/10/2020))</a></li>
+                        <li class="list"><a href="">> Review top 7 serum trị thâm hiệu quả (12/10/2020)</a></li>
+                        <li class="list"><a href="">> Review top 5 xịt dưỡng tóc tốt nhất trên thị trường (01/09/2020)</a></li>
+                        <li class="list"><a href="">> Những loại mặt nạ tốt nhất hiện nay chị em nên thử (01/09/2020)</a></li>
+                        <li class="list"><a href="">> Son Hàn Quốc nào được giới trẻ săn đón nhất hiện nay (31/08/2020)</a></li>
+                        <li class="list"><a href="">> Top 5 loại loại sữa rửa mặt ăn khách nhất năm 2020 chị em nên thử (29/08/2020)</a></li>
+                        <li class="list"><a href="">> Review 5 loại kem dưỡng cho da mịn mượt mấy bạn da xấu nên thử (28/08/2020)</a></li>
+                        <li class="list"><a href="">> Da xinh kiên cường chống dịch (24/08/2020)</a></li>
+                    </ul>
+                </div>
+           </div><!--hết phần làm main-->
+    </div>
+       <div style="clear: both; height: 10px;"></div>
+    <!--bắt đầu làm kết thúc-->   
+       <div id="footer">
+        <div class="wraper">
+            <div id="last">
+                            <div id="left-last">
+                <a href=""><img src="https://cocoshop.vn/uploads/logofooter-min-1.png" alt=""></a>
+                <img src="https://cocoshop.vn/uploads/1492058103818_8888090.png" alt="">
+            </div>
+            <div id="main-last">
+                <p class="text-last">COCO SHOP là hệ thống mỹ phẩm chính hãng và uy tín có quy mô lớn số 1 Việt Nam,đa dạng các loại mỹ phẩm đến từ các hãng nổi tiếng trên toàn thế giới,,,Đến  với COCOSHOP các bạn có quyền được yên tâm khi mua sắm cũng như được đáp ứng mọi nhu cầu về làm đẹp. Với phương châm luôn nỗ lực vì khách hàng thân yêu, COCOSHOP không ngừng cố gắng để xứng đáng là địa điểm mua săm tin cậy trong lòng các bạn trẻ</p>
+                <p class="text-last">Trực thuộc Công ty TNHH Thương mại và đầu tư xuất nhập khẩu Việt Nam 
+                    Địa chỉ : Số 10, ngõ 59 Hoàng Cầu, P. Ô Chợ Dừa, Q. Đống Đa, Tp. Hà Nội
+                    Phone: +84915156485</p>
+                <p class="text-last">© Bản quyền thuộc về Coco Shop - Chuỗi cửa hàng mỹ phẩm chính hãng làm đẹp. </p>
+            </div>
+            <div id="last-last">
+                <ul>
+                    <li class="last-last-item"><a href="">hướng dẫn mua hàng</a></li>
+                    <li class="last-last-item"><a href="">giải đáp thắc mắc</a></li>
+                    <li class="last-last-item"><a href="">chính sách đổi trả</a></li>
+                    <li class="last-last-item">	Điện thoại: +84-988888290</li>
+                    <li class="last-last-item">Email: cskh@cocoshop.vn</li>
+                    <li class="last-last-item">Website: http://cocoshop.vn</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

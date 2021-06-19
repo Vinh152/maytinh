@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIN TỨC</title>
+    <link rel="stylesheet" href="./CSS/trang-tin-tuc.css">
+    <link rel="stylesheet" href="./ICON/fontawesome-free-5.15.2-web/fontawesome-free-5.15.2-web/css/all.min.css">
+</head>
+<body>
+    <script>
+        var couter=1;
+        setInterval(function() {
+            document.getElementById('radio' + couter).checked=true;
+            couter++;
+            if(couter>4){
+                couter=1;
+            }
+        }, 2000)
+    </script>
+    <div class="header"><!--làm phần header-->
+        <div class="full-background"><!--làm phần full màn hình-->
+            <div class="wraper">
+                <div class="header-first">   <!--làm phần header đầu tiên-->
+                    <p class="number-phone"><i class="fas fa-phone-square-alt"></i> 0988888290</p>
+                    <div class="header-first-tittle">
+                        <marquee><p>Coco Shop - Hệ thống thương hiệu mỹ phẩm chính hãng, với 600 thương hiệu mỹ phẩm - uy tín - chất lượng Top 1 Việt Nam </p></marquee>
+                    </div>
+                    <div class="header-first-icon">
+                        <a href="">VI</a>
+                        <a href="">EN</a>
+                    </div>
+                </div> <!--hết làm phần header đầu tiên-->
+            </div><!--hết div wraper-->
+        </div><!--hết làm phần full màn hình-->
+    
+        <div class="wraper">
+            <div class="header-second"> <!--làm phần header thứ 2-->
+                <div class="logo">
+                    <a href=""><img src="https://cocoshop.vn/uploads/logohead-min.png" alt=""></a>
+                </div>
+                <div class="header-second-search">
+                   <form action="#">
+                    <input class="search" type="text" placeholder="Tìm kiếm.....">
+                    <input class="submit" type="submit" value="Search">
+                   </form>
+                </div>
+                <div class="login">
+                    <div class="icon-login">
+                        <i class="fas fa-user-alt"></i>
+                    </div>
+                    <div class="login-item">
+                        <a onclick="login()" href="">Đăng nhập/Đăng ký</a>
+                    </div>
+                </div>
+                <div class="buy">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div> <!--làm phần header thứ 2-->
+        </div> <!--hết div wraper-->
+    
+        <!-- làm phần header thứ ba -->
+        <div class="header-three">
+            <div class="wraper">
+                <div class="header-three-menu">
+                    <ul>
+                        <li class="header-three-menu-item item1">DANH MỤC SẢN PHẨM <i class="fas fa-list-ul"></i></li>
+                        <li class="header-three-menu-item"><a href="">thương hiệu</a> </li>
+                        <li class="header-three-menu-item"><a href="">khuyến mại</a> </li>
+                        <li class="header-three-menu-item"><a href="http://127.0.0.1:5500/trang-tin-tuc.html">xu hướng làm đẹp</a> </li>
+                        <li class="header-three-menu-item"><a href="">tra cứu đơn hàng</a> </li>
+                        <li class="header-three-menu-item"><a href="">liên hệ</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- làm phần header thứ tư -->
+        <div class="header-four">
+            <div class="wraper1">
+                <div class="header-four-left">
+                    <ul>
+                        <li class="header-four-menu-item">
+                           <div class="header-four-menu-item-text">
+                               <img src="https://cocoshop.vn/assets/shops/2019_07/trangdiem-min_1.png" alt="">
+                               <a class="a1" href="">trang điểm - makeup</a>
+                           </div>
+                           <i class="fas fa-angle-right"></i>
+                           <div class="dropdown-menu d1"> <!--làm phần dropdown-->
+                            <div class="dropdown-menu-item">
+                                <ul>
+                                    <li class="drowdown-item"><a href="">Kem lót - Makeup prmer</a></li>
+                                    <li class="drowdown-item"><a href="">Phấn nước - Cushion</a></li>
+                                    <li class="drowdown-item"><a href="">Phấn phủ - Powder</a></li>
+                                    <li class="drowdown-item"><a href="">Kẻ mắt - Eyeliner</a></li>
+                                    <li class="drowdown-item"><a href="">Mascara</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown-menu-item">
+                                <ul>
+                                    <li class="drowdown-item"><a href="">Kem nền - BB - CC</a></li>
+                                    <li class="drowdown-item"><a href="">Che khuyết điểm</a></li>
+                                    <li class="drowdown-item"><a href="">Phấn mắt - Phấn má</a></li>
+                                    <li class="drowdown-item"><a href="">Kẻ mày - Eyebrown</a></li>
+                                    <li class="drowdown-item"><a href="">Others</a></li>
+                                </ul>
+                            </div>
+                        </div> <!--hết làm phần dropdown-->
+                        </li>
+    
+    
+                        <li class="header-four-menu-item">
+                            <div class="header-four-menu-item-text">
+                                <img src="https://cocoshop.vn/assets/shops/2020_04/trangdiemmoi.png" alt="">
+                                <a class="a1" href="">son môi - lips</a>
+                            </div>
+                            <i class="fas fa-angle-right"></i>
+                            <div class="dropdown-menu d2"> <!--làm phần dropdown-->
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Son dưỡng - Lipbalm</a></li>
+                                        <li class="drowdown-item"><a href="">Son kem - Lip Tint</a></li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Son thỏi - Lipstick</a></li>
+                                        <li class="drowdown-item"><a href="">Sản phẩm chăm sóc môi</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div> <!--hết làm phần dropdown-->
+                         </li>
+    
+    
+                         <li class="header-four-menu-item ">
+                            <div class="header-four-menu-item-text">
+                                <img src="https://cocoshop.vn/assets/shops/2019_07/chamsocda-min_1.png" alt="">
+                                <a  class="a1" href="">chăm sóc da - skin care</a>
+                            </div>
+                            <i class="fas fa-angle-right"></i>
+                            <div class="dropdown-menu d3"> <!--làm phần dropdown-->
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Tẩy trang - Micellar...</a></li>
+                                        <li class="drowdown-item"><a href="">Tẩy da chết - Scrub</a></li>
+                                        <li class="drowdown-item"><a href="">Sữa dưỡng - Lotion</a></li>
+                                        <li class="drowdown-item"><a href="">Kem dưỡng - Faclal Cream</a></li>
+                                        <li class="drowdown-item"><a href="">Kem mắt - Eye Cream</a></li>
+                                        <li class="drowdown-item"><a href="">Mặt nạ - Mask</a></li>
+                                        <li class="drowdown-item"><a href="">Kem chống nắng</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Sữa rửa mặt - Cleansing...</a></li>
+                                        <li class="drowdown-item"><a href="">Nước hoa hồng - Toner</a></li>
+                                        <li class="drowdown-item"><a href="">Serum</a></li>
+                                        <li class="drowdown-item"><a href="">Kem trị mụn - Acne...</a></li>
+                                        <li class="drowdown-item"><a href="">Dưỡng mi - Eyelash Care</a></li>
+                                        <li class="drowdown-item"><a href="">Xịt khoáng - Facial Mist</a></li>
+                                        <li class="drowdown-item"><a href="">Kem trị sẹo - Trị nám</a></li>
+                                    </ul>
+                                </div>
+                            </div> <!--hết làm phần dropdown-->
+                         </li>
+    
+    
+                         <li class="header-four-menu-item">
+                            <div class="header-four-menu-item-text">
+                                <img src="https://cocoshop.vn/assets/shops/2019_07/chamsoccothe-min_1.png" alt="">
+                                <a class="a1" href="">chăm sóc cơ thể - body</a>
+                            </div>
+                            <i class="fas fa-angle-right"></i>
+                            <div class="dropdown-menu d4"> <!--làm phần dropdown-->
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Sữa tắm - Shower Gel</a></li>
+                                        <li class="drowdown-item"><a href="">Tẩy da chết body - Body...</a></li>
+                                        <li class="drowdown-item"><a href="">Body Mist</a></li>
+                                        <li class="drowdown-item"><a href="">Lăn xịt khử mùi -...</a></li>
+                                        <li class="drowdown-item"><a href="">Dung dịch vệ sinh</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Xà phòng - Soap</a></li>
+                                        <li class="drowdown-item"><a href="">Dưỡng thể - Body Lotlon</a></li>
+                                        <li class="drowdown-item"><a href="">Tẩy lông - Waxing Cream</a></li>
+                                        <li class="drowdown-item"><a href="">Kem tan mỡ - Trị rạn -...</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div> <!--hết làm phần dropdown-->
+                         </li>
+    
+    
+                         <li class="header-four-menu-item">
+                            <div class="header-four-menu-item-text">
+                                <img src="https://cocoshop.vn/assets/shops/2019_07/chamsoctocmin.png" alt="">
+                                <a class="a1" href="">chăm sóc tóc - hair</a>
+                            </div>
+                            <i class="fas fa-angle-right"></i>
+                            <div class="dropdown-menu d5"> <!--làm phần dropdown-->
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Dầu gội/xả...</a></li>
+                                        <li class="drowdown-item"><a href="">Thuốc nhuộn tóc - Hair...</a></li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Dưỡng tóc</a></li>
+                                        <li class="drowdown-item"><a href="">Ủ tóc</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div> <!--hết làm phần dropdown-->
+                         </li>
+    
+                         <li class="header-four-menu-item">
+                            <div class="header-four-menu-item-text">
+                                <img src="https://cocoshop.vn/assets/shops/2019_07/dungcu-min.png" alt="">
+                                <a  class="a1" href="">dụng cụ - tools</a>
+                            </div>
+                            <i class="fas fa-angle-right"></i>
+                            <div class="dropdown-menu d6"> <!--làm phần dropdown-->
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Bông trang điểm</a></li>
+                                        <li class="drowdown-item"><a href="">Kẹp mi- Dao cạo</a></li>
+                                        <li class="drowdown-item"><a href="">Bông tẩy trang</a></li>
+                                        <li class="drowdown-item"><a href="">Giấy thấm dầu</a></li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Dụng cụ chăm sóc da</a></li>
+                                        <li class="drowdown-item"><a href="">Cọ trang điểm</a></li>
+                                        <li class="drowdown-item"><a href="">Mi giả - Kích mí </a></li>
+                                        <li class="drowdown-item"><a href="">Túi/khay - Bộ chiết mỹ phẩm</a></li>
+                                        <li class="drowdown-item"><a href="">Mascara</a></li>
+                                    </ul>
+                                </div>
+                            </div> <!--hết làm phần dropdown-->
+                         </li>
+    
+                         <li class="header-four-menu-item">
+                            <div class="header-four-menu-item-text">
+                                <img src="https://cocoshop.vn/assets/shops/2019_07/nuoschoa-min.png" alt="">
+                                <a class="a1" href="">nước hoa - perfume</a>
+                            </div>
+                            <i class="fas fa-angle-right"></i>
+                            <div class="dropdown-menu d7"> <!--làm phần dropdown-->
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Nước hoa body</a></li>
+                                        <li class="drowdown-item"><a href="">Nước hoa nữ</a></li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Nước hoa nam</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div> <!--hết làm phần dropdown-->
+                         </li>
+    
+                         <li class="header-four-menu-item">
+                            <div class="header-four-menu-item-text">
+                                <img src="https://cocoshop.vn/assets/shops/2019_07/spkhac-min_1.png" alt="">
+                                <a class="a1" href="">sản phẩm khác - others</a>
+                            </div>
+                            <i class="fas fa-angle-right"></i>
+                            <div class="dropdown-menu d8"> <!--làm phần dropdown-->
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Vitamin</a></li>
+                                        <li class="drowdown-item"><a href="">Kem đánh răng</a></li>
+                                        <li class="drowdown-item"><a href="">Các sản phẩm khác</a></li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="dropdown-menu-item">
+                                    <ul>
+                                        <li class="drowdown-item"><a href="">Trà giảm cân</a></li>
+                                        <li class="drowdown-item"><a href="">Xịt thơm quần áo</a></li>
+                                        <li class="drowdown-item"><a href="">Viên uống DHC</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div> <!--hết làm phần dropdown-->
+                         </li>
+                    </ul>
+                </div>
+                <div class="header-four-between">
+                    <div class="slides">
+                        <div class="slide">
+                            <input type="radio" name="check" id="radio1">
+                            <input type="radio" name="check" id="radio2">
+                            <input type="radio" name="check" id="radio3">
+                            <input type="radio" name="check" id="radio4">
+    
+    
+                            <div class="slide-img first">
+                                <img src="https://cocoshop.vn/uploads/slider/images/bnw.jpg" alt="">
+                            </div>
+                            <div class="slide-img ">
+                                <img src="https://cocoshop.vn/uploads/slider/images/bnbg-web.jpg" alt="">
+                            </div>
+                            <div class="slide-img ">
+                                <img src="https://cocoshop.vn/uploads/slider/images/bnw2.jpg" alt="">
+                            </div>
+                            <div class="slide-img ">
+                                <img src="https://cdn.pixabay.com/photo/2015/11/26/00/54/cosmetics-1063134_960_720.jpg" alt="">
+                            </div>
+    
+                            <div class="dieu-huong-tu-dong-auto">
+                                <div class="auto-bt1"></div>
+                                <div class="auto-bt2"></div>
+                                <div class="auto-bt3"></div>
+                                <div class="auto-bt4"></div>
+                            </div>
+                            <div class="manual">
+                                <label for="radio1" class="manual-bth"></label>
+                                <label for="radio2" class="manual-bth"></label>
+                                <label for="radio3" class="manual-bth"></label>
+                                <label for="radio4" class="manual-bth"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="header-four-right">
+                    <a href=""><img src="https://ssl.latcdn.com/img/SJCs3hoGU-82958058_1781861325278324_5497627734530064384_o.jpg" alt=""></a>
+                    <a href=""><img src="https://cdn.pixabay.com/photo/2019/10/18/07/28/eye-shadow-4558443_960_720.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div><!--hết làm phần header-->
+    <div style="clear: both;"></div>
+    <!-- sang làm phần main -->
+    <div class="main">
+        <div class="wraper2">
+            <div class="tittle-main">
+                <h1><i>tin tức</i></h1>
+                <img src="https://cocoshop.vn/themes/default/images/icon-header.png" alt="">
+            </div>
+            <!--bắt đầu làm phần show tin tức-->
+        <div class="main-new-information">
+            <a href="http://127.0.0.1:5500/web%20ch%C3%ADnh%20cua%20anh/web%20b%C3%A1n%20m%E1%BB%B9%20ph%E1%BA%A9m%20l%C3%A0m%20l%E1%BA%A1i/trang-show-1-tin-tuc.html"><img src="https://cocoshop.vn/uploads/news/2020_12/cach-cham-soc-da-mun-hieu-qua.jpg" alt="ảnh mạng"></a>
+           <div class="main-new-information-text">
+               <p><a href="http://127.0.0.1:5500/web%20ch%C3%ADnh%20cua%20anh/web%20b%C3%A1n%20m%E1%BB%B9%20ph%E1%BA%A9m%20l%C3%A0m%20l%E1%BA%A1i/trang-show-1-tin-tuc.html">Da mụn đừng vội lo lắng "Cách chăm sóc da mụn hiệu quả"</a></p>
+               <p>Muốn chăm sóc da mụn tốt đầu tiên bạn phải hiểu rõ làn da của mình trước đã. Cũng như muốn điều trị mụn trước hết bạn cần biết mụn từ đâu mà có, do đâu mà hình thành và phát triển?</p>
+           </div>
+       </div>
+
+       <div class="main-new-information">
+        <a href=""> <img src="https://cocoshop.vn/assets/news/2020_11/cac-buoc-skincare.jpg" alt="ảnh mạng"></a>
+       <div class="main-new-information-text">
+           <p><a href="">Hướng dẫn cách mix và layer các sản phẩm skincare"</a></p>
+           <p>Cách kết hợp các hoạt chất dưỡng da nhất định phải biết nếu không muốn skincare "công dã tràng". 2020 rồi, dưỡng da bây giờ không chỉ còn đơn giản là Rửa mặt – dưỡng ẩm – chống nắng nữa, mà còn là tầng tầng lớp lớp bao nhiêu là serum, bao nhiêu là đặc trị…</p>
+       </div>
+
+   </div>
+   <div class="main-new-information">
+    <a href=""> <img src="https://cocoshop.vn/assets/news/2020_10/cushion-che-khuyet-diem-1.jpg" alt="ảnh mạng"></a>
+   <div class="main-new-information-text">
+       <p><a href="">Cushion - Foudation cực tiệp màu và giàu ẩm"</a></p>
+       <p>Hãy yêu chiều bản thân để xinh đẹp trong những ngày trọng đại nàng nhé! COCO thân tặng bạn BST Cushion - Foudation cực tiệp màu và giàu ẩm bất chấp mọi không gianChỉ từ 178K để sở hữa lớp nền hoàn hảo. Bạn sẽ là trung tâm của mọi ánh nhìn, luôn xinh đẹp và rạng rỡ khi có chúng mình đồng hành</p>
+   </div>
+</div>
+
+<div class="main-new-information">
+<a href=""> <img src="https://cocoshop.vn/uploads/news/2020_10/tay-da-chet-cho-da.jpg" alt="ảnh mạng"></a>
+<div class="main-new-information-text">
+   <p><a href="">Tẩy da chết và những điều nàng có thể chưa biết</a></p>
+   <p>Tẩy tế bào chết cho da mặt là một trong những bước skincare vô cùng quan trọng. Tẩy tế bào chết, giống như hầu hết các thói quen chăm sóc da, không phải là một thời khóa biểu khoa học chính xác, tùy vào loại da...</p>
+</div>
+</div>
+
+<div class="main-new-information">
+<a href=""> <img src="https://cocoshop.vn/uploads/news/2020_10/image-20201012083453-1.jpeg" alt="ảnh mạng"></a>
+<div class="main-new-information-text">
+   <p><a href="">Review top 7 serum trị thâm hiệu quả</a></p>
+   <p>Trị thâm mụn là vấn đề được rất nhiều chị em quan tâm vì tỉ lệ mụn để lại vết thâm là rất cao, mà mụn thì có thể gặp ở mọi độ tuổi chứ không chỉ riêng tuổi dậy thì mà còn do sự thay đổi nội tiết hay nếp sống sinh hoạt. Vết thâm trên da</p>
+</div>
+</div>
+
+<div class="main-new-information">
+<a href=""> <img src="https://cocoshop.vn/uploads/news/2020_09/image-20200901151620-1.jpeg" alt="ảnh mạng"></a>
+<div class="main-new-information-text">
+   <p><a href="">Review top 5 xịt dưỡng tóc tốt nhất trên thị trường</a></p>
+   <p>Cái răng cái tóc là vóc con người, tiêu chuẩn cái đẹp từ xưa đến nay vẫn chưa bao giờ là thay đổi. Dáng chuẩn, mặt xinh luôn được ưu ái. Không chỉ còn chăm chút khuôn mặt,</p>
+</div>
+</div>
+
+<div class="main-new-information">
+<a href=""> <img src="https://cocoshop.vn/uploads/news/2020_09/image-20200901133819-2.jpeg" alt="ảnh mạng"></a>
+<div class="main-new-information-text">
+   <p><a href="">Những loại mặt nạ tốt nhất hiện nay chị em nên thử</a></p>
+   <p>Hiện nay xuất hiện rất nhiều loại mặt nạ dưỡng, thanh lọc, cấp ẩm qua đêm… không chỉ cung cấp thêm những dưỡng chất cần thiết, mà còn là một cách giúp bạn thư giãn và thể hiện</p>
+</div>
+</div>
+
+<div class="main-new-information">
+<a href=""> <img src="https://cocoshop.vn/uploads/news/2020_08/image-20200831100547-4.jpeg" alt="ảnh mạng"></a>
+<div class="main-new-information-text">
+   <p><a href="">Son Hàn Quốc nào được giới trẻ săn đón nhất hiện nay</a></p>
+   <p>Hàn Quốc được xem là cái nôi mỹ phẩm tại Châu Á, với rất nhiều thương hiệu khác nhau và rất được giới trẻ ưa chuộng. Bên cạnh những mặt hàng nổi bật như cushion, phấn phủ</p>
+</div>
+</div>
+
+<div class="main-new-information">
+<a href=""> <img src="https://cocoshop.vn/uploads/news/2020_08/image-20200829151135-8.jpeg" alt="ảnh mạng"></a>
+<div class="main-new-information-text">
+   <p><a href="">Top 5 loại loại sữa rửa mặt ăn khách nhất năm 2020 chị em nên thử</a></p>
+   <p>Hầu hết chị em đã biết rằng hiện tại sữa rửa mặt đang vô cùng phổ biến đối với phái đẹp, rất nhiều loại và giá thành khác nhau cho bạn lựa chọn.</p>
+</div>
+</div>
+
+<div class="main-new-information">
+<a href=""> <img src="https://cocoshop.vn/uploads/news/2020_08/lan-da-dep-1.jpg" alt="ảnh mạng"></a>
+<div class="main-new-information-text">
+   <p><a href="">Review 5 loại kem dưỡng cho da mịn mượt mấy bạn da xấu nên thử</a></p>
+   <p>“Nhất dáng nhì da” quả là ông cha ta nói không sai, dáng xinh kèm theo nước da trắng trẻo mịn màng thì không một chàng trai nào cưỡng lại vẻ đáng yêu</p>
+</div>
+</div>
+
+<div class="main-new-information">
+<a href=""> <img src="https://cocoshop.vn/uploads/news/2020_08/la-roche-posay-1.jpg" alt="ảnh mạng"></a>
+<div class="main-new-information-text">
+   <p><a href="">Da xinh kiên cường chống dịch</a></p>
+   <p>Giữa những chuyển biến phức tạp của tình hình dịch bệnh trong giai đoạn mới, sức khoẻ lúc này cần được đặt trong tình trạng chú ý kĩ càng hơn.</p>
+</div>
+</div>
+
+<div class="main-new-information">
+<a href=""> <img src="https://cocoshop.vn/uploads/news/2020_08/tri-mun-chuan-bai-naruko1.jpg" alt="ảnh mạng"></a>
+<div class="main-new-information-text">
+   <p><a href="">Trị mụn chuẩn bài từ A - Z với combo Naruko Tea Tree</a></p>
+   <p>Mụn luôn là nỗi ám ảnh lớn với mọi cô nàng, bởi nó vừa làm chị em trông mất tự tin, vừa là dấu hiệu cho bệnh lý hay cách chăm sóc da chưa tốt.</p>
+</div>
+</div>
+
+<div class="main-new-information">
+<a href=""> <img src="https://cocoshop.vn/uploads/news/2020_07/kem-chong-nang-avene-3_1.jpg" alt="ảnh mạng"></a>
+<div class="main-new-information-text">
+   <p><a href="">Hè năng động với kem chống nắng Avene cho da nhờn mụn SPF 50+</a></p>
+   <p>Nỗi mong mỏi hè về để có một chuyến đi biển là mong muốn của tất cả mọi người, nhưng nỗi lo lớn nhất của chị em cũng chính là đi biển phải chống nắng</p>
+</div>
+</div>
+
+<div class="main-new-information">
+<a href=""> <img src="https://cocoshop.vn/uploads/news/2020_06/cocoshop1.jpg" alt="ảnh mạng"></a>
+<div class="main-new-information-text">
+   <p><a href="">Bí quyết trẻ mãi không già - Bật mí top 5 serum sịn chống lão hóa</a></p>
+   <p>Sở hữu làn da đẹp, nó còn tuyệt vời hơn nhiều so với mặc một chiếc áo đẹp ấy chị em ạ. Làn da khỏe mạnh, căng mướt, cũng chính là bằng chứng</p>
+</div>
+</div>
+
+<div class="main-new-information">
+<a href=""> <img src="https://cocoshop.vn/uploads/news/2020_06/son-moi-nuoc.jpg" alt="ảnh mạng"></a>
+<div class="main-new-information-text">
+   <p><a href="">Top những loại son môi nước đỉnh nhất mà chị em nên có</a></p>
+   <p>Trên thị trường hiện nay có rất nhiều dạng son khác nhau, trong đó thì son môi nước đặc biệt được nhiều chị em sử dụng bởi khả năng lên màu </p>
+</div>
+</div>
+
+<div class="main-new-information">
+<a href=""> <img src="https://cocoshop.vn/uploads/news/2020_05/xit-khoang.jpg" alt="ảnh mạng"></a>
+<div class="main-new-information-text">
+   <p><a href="">Xịt khoáng - Cho da khô thoáng cả mùa hè</a></p>
+   <p>Bên cạnh kem chống nắng, các nàng hãy nhớ luôn bỏ túi 1 chai xịt khoáng trong những ngày hè nóng bức nha vì đây chính là "cứu tinh"</p>
+</div>
+</div>
+
+<div class="main-new-information">
+<a href=""> <img src="https://cocoshop.vn/uploads/news/2020_05/kem-chong-nang.jpg" alt="ảnh mạng"></a>
+<div class="main-new-information-text">
+   <p><a href="">Kem chống nắng bảo vệ da mỗi ngày</a></p>
+   <p>Kem chống nắng là bước chăm sóc da quan trọng. Kem chống nắng chính là “chìa khóa” quyết định việc bạn có sở hữu làn da đẹp hay không.</p>
+</div>
+</div>
+
+<div class="main-new-information">
+<a href=""> <img src="https://cocoshop.vn/uploads/news/2020_05/my-pham-han-quoc_1.jpg" alt="ảnh mạng"></a>
+<div class="main-new-information-text">
+   <p><a href="">Bộ sản phẩm AVÈNE cho mùa hè năng động</a></p>
+   <p>Avène là dòng Dược Mỹ Phẩm của Pháp với lịch sử phát triển gần 300 năm, đã được các bác sĩ da liễu trên toàn thế giới xác nhận và khuyên dùng.</p>
+</div>
+</div>
+
+<div class="main-new-information">
+<a href=""> <img src="https://cocoshop.vn/uploads/news/2020_05/giay-tham-dau.jpg" alt="ảnh mạng"></a>
+<div class="main-new-information-text">
+   <p><a href="">Giải pháp loại bỏ dầu nhờn ngay tức thì</a></p>
+   <p>Làn da bóng dầu là nỗi ám ảnh của không ít chị ẹm mỗi dịp hè về Một gương mặt bóng nhẫy vì lượng dầu thừa cứ tiết ra trên da vào ngày hè,</p>
+</div>
+</div>
+
+<div class="main-new-information">
+<a href=""> <img src="https://cocoshop.vn/uploads/news/2020_05/my-pham-han-quoc.jpg" alt="ảnh mạng"></a>
+<div class="main-new-information-text">
+   <p><a href="">Kem chống nắng bảo vệ da mỗi ngày</a></p>
+   <p>Mùa hè là mùa của những chuyến du lịch xa xa. Đặc biệt, là những chuyến đi biển cực cực thích. Đợt nắng nóng đã quay lại rồi,</p>
+</div>
+</div>
+   <!--kết thúc làm phần show tin tức-->   
+   <div class="number-page">
+    <a class="page" href="">1</a>
+    <a class="page" href="">2</a>
+</div>
+        </div> <!--đây là hết div wraper1-->
+    </div><!--hết phần main-->
+    <div style="clear: both;"></div>
+    <!-- làm phần cuối trang web  -->
+    <div class="footer">
+        <div class="wraper">
+            <div id="last">
+                <div id="left-last">
+                <a href=""><img src="https://cocoshop.vn/uploads/logofooter-min-1.png" alt=""></a>
+                <img src="https://cocoshop.vn/uploads/1492058103818_8888090.png" alt="">
+            </div>
+            <div id="main-last">
+                <p class="text-last">COCO SHOP là hệ thống mỹ phẩm chính hãng và uy tín có quy mô lớn số 1 Việt Nam,đa dạng các loại mỹ phẩm đến từ các hãng nổi tiếng trên toàn thế giới,,,Đến  với COCOSHOP các bạn có quyền được yên tâm khi mua sắm cũng như được đáp ứng mọi nhu cầu về làm đẹp. Với phương châm luôn nỗ lực vì khách hàng thân yêu, COCOSHOP không ngừng cố gắng để xứng đáng là địa điểm mua săm tin cậy trong lòng các bạn trẻ</p>
+                <p class="text-last">Trực thuộc Công ty TNHH Thương mại và đầu tư xuất nhập khẩu Việt Nam 
+                    Địa chỉ : Số 10, ngõ 59 Hoàng Cầu, P. Ô Chợ Dừa, Q. Đống Đa, Tp. Hà Nội
+                    Phone: +84915156485</p>
+                <p class="text-last">© Bản quyền thuộc về Coco Shop - Chuỗi cửa hàng mỹ phẩm chính hãng làm đẹp. </p>
+            </div>
+            <div id="last-last">
+                <ul>
+                    <li class="last-last-item"><a href="">hướng dẫn mua hàng</a></li>
+                    <li class="last-last-item"><a href="">giải đáp thắc mắc</a></li>
+                    <li class="last-last-item"><a href="">chính sách đổi trả</a></li>
+                    <li class="last-last-item"> Điện thoại: +84-988888290</li>
+                    <li class="last-last-item">Email: cskh@cocoshop.vn</li>
+                    <li class="last-last-item">Website: http://cocoshop.vn</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

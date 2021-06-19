@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIỎ HÀNG</title>
+    <link rel="stylesheet" href="./CSS/gio-hang.css">
+    <link rel="stylesheet" href="./ICON/fontawesome-free-5.15.2-web/fontawesome-free-5.15.2-web/css/all.min.css">
+</head>
+<body>
+    <div class="header"><!--làm phần header-->
+        <div class="full-background"><!--làm phần full màn hình-->
+            <div class="wraper">
+                <div class="header-first">   <!--làm phần header đầu tiên-->
+                    <p class="number-phone"><i class="fas fa-phone-square-alt"></i> 0988888290</p>
+                    <div class="header-first-tittle">
+                        <marquee><p>Coco Shop - Hệ thống thương hiệu mỹ phẩm chính hãng, với 600 thương hiệu mỹ phẩm - uy tín - chất lượng Top 1 Việt Nam </p></marquee>
+                    </div>
+                    <div class="header-first-icon">
+                        <a href="">VI</a>
+                        <a href="">EN</a>
+                    </div>
+                </div> <!--hết làm phần header đầu tiên-->
+            </div><!--hết div wraper-->
+        </div><!--hết làm phần full màn hình-->
+    
+        <div class="wraper">
+            <div class="header-second"> <!--làm phần header thứ 2-->
+                <div class="logo">
+                    <a href=""><img src="https://cocoshop.vn/uploads/logohead-min.png" alt=""></a>
+                </div>
+                <div class="header-second-search">
+                   <form action="#">
+                    <input class="search" type="text" placeholder="Tìm kiếm.....">
+                    <input class="submit" type="submit" value="Search">
+                   </form>
+                </div>
+                <div class="login">
+                    <div class="icon-login">
+                        <i class="fas fa-user-alt"></i>
+                    </div>
+                    <div class="login-item">
+                        <a onclick="login()" href="">Đăng nhập/Đăng ký</a>
+                    </div>
+                </div>
+                <div class="buy">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div> <!--làm phần header thứ 2-->
+        </div> <!--hết div wraper-->
+    
+        <!-- làm phần header thứ ba -->
+        <div class="header-three">
+            <div class="wraper">
+                <div class="header-three-menu">
+                    <ul>
+                        <li class="header-three-menu-item item1">DANH MỤC SẢN PHẨM <i class="fas fa-list-ul"></i></li>
+                        <li class="header-three-menu-item"><a href="">thương hiệu</a> </li>
+                        <li class="header-three-menu-item"><a href="">khuyến mại</a> </li>
+                        <li class="header-three-menu-item"><a href="http://127.0.0.1:5500/trang-tin-tuc.html">xu hướng làm đẹp</a> </li>
+                        <li class="header-three-menu-item"><a href="">tra cứu đơn hàng</a> </li>
+                        <li class="header-three-menu-item"><a href="">liên hệ</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div><!--hết làm phần header-->
+    <div style="clear: both;"></div>
+    <div class="main"><!--hết phần làm main-->
+        <div class="wraper2">
+            <div class="main-1">
+                <a href=""><p> <i class="fas fa-home"></i> Trang nhất</p></a>
+            </div>
+            <div class="main-2">
+                <p>Xin điền đầy đủ thông tin vào các mục đánh dấu (*). Bạn có thể hoàn thành tự động các mục này bằng cách sửa thông tin thành viên và điền đầy đủ thông tin liên hệ của mình.</p>
+            </div>
+            <div class="main-left"><!--làm phần main bên trái-->
+                <div class="main-left-1">
+                    <p><i class="fas fa-map-marker-alt"></i> ĐỊA CHỈ NHẬN HÀNG</p>
+                </div>
+                <div class="main-left-2">
+                    <div class="main-left-2-item">
+                        <p class="main-left-2-item-tittle">Họ tên người nhận</p>
+                        <input class="main-left-2-item-input" type="text" name="" id="" placeholder="Họ tên người nhận">
+                    </div>
+                    <div class="main-left-2-item">
+                        <p class="main-left-2-item-tittle">Số điện thoại người nhận</p>
+                        <input class="main-left-2-item-input" type="text" name="" id="" placeholder="Số điện thoại người nhận">
+                    </div>
+                    <div class="main-left-2-item">
+                        <p class="main-left-2-item-tittle">Địa chỉ email</p>
+                        <input class="main-left-2-item-input" type="text" name="" id="" placeholder="Địa chỉ email">
+                    </div>
+                    <div class="main-left-2-item">
+                        <p class="main-left-2-item-tittle">Chọn Tỉnh / Thành phố</p>
+                       <select class="main-left-2-item-search" name="" id="">
+                        <option value="Hà Nội">Hà Nội</option>
+                        <option value="TP HCM">TP HCM</option>
+                        <option value="An Giang">An Giang</option>
+                        <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu</option>
+                        <option value="Bắc Giang">Bắc Giang</option>
+                        <option value="Bắc Kạn">Bắc Kạn</option>
+                        <option value="Bạc Liêu">Bạc Liêu</option>
+                        <option value="Bắc Ninh">Bắc Ninh</option>
+                        <option value="Bến Tre">Bến Tre</option>
+                        <option value="Bình Định">Bình Định</option>
+                        <option value="Bình Dương">Bình Dương</option>
+                        <option value="Bình Phước">Bình Phước</option>
+                        <option value="Bình Thuận">Bình Thuận</option>
+                        <option value="Cà Mau">Cà Mau</option>
+                        <option value="Cao Bằng">Cao Bằng</option>
+                        <option value="Đắk Lắk">Đắk Lắk</option>
+                        <option value="Đắk Nông">Đắk Nông</option>
+                        <option value="Điện Biên">Điện Biên</option>
+                        <option value="Đồng Nai">Đồng Nai</option>
+                        <option value="Đồng Tháp">Đồng Tháp</option>
+                        <option value="Gia Lai">Gia Lai</option>
+                        <option value="Hà Giang">Hà Giang</option>
+                        <option value="Hà Nam">Hà Nam</option>
+                        <option value="Hà Tĩnh">Hà Tĩnh</option>
+                        <option value="Hải Dương">Hải Dương</option>
+                       </select>
+                    </div>
+                    <div class="main-left-2-item">
+                        <p class="main-left-2-item-tittle">Chọn Quận/ Huyện</p>
+                        <select class="main-left-2-item-search" name="" id="">
+                            <option value="Ba Đình">Ba Đình</option>
+                            <option value="Bắc Từ Liêm">Bắc Từ Liêm</option>
+                            <option value="Cầu Giấy">Cầu Giấy</option>
+                            <option value="Đống Đa">Đống Đa</option>
+                            <option value="Hà Đông">Hà Đông</option>
+                            <option value="Hai Bà Trưng">Hai Bà Trưng</option>
+                            <option value="Hoàn Kiếm">Hoàn Kiếm</option>
+                            <option value="Hoàng Mai">Hoàng Mai</option>
+                            <option value="Long Biên">Long Biên</option>
+                            <option value="Nam Từ Liêm">Nam Từ Liêm</option>
+                            <option value="Tây Hồ">Tây Hồ</option>
+                            <option value="Thanh Xuân">Thanh Xuân</option>
+                            <option value="Ba Vì">Ba Vì</option>
+                            <option value="Chương Mỹ">Chương Mỹ</option>
+                            <option value="Đan Phượng">Đan Phượng</option>
+                            <option value="Đông Anh">Đông Anh</option>
+                            <option value="Gia Lâm">Gia Lâm</option>
+                            <option value="Hoài Đức">Hoài Đức</option>
+                            <option value="Mê Linh">Mê Linh</option>
+                            <option value="Mỹ Đức">Mỹ Đức</option>
+                            <option value="Phú Xuyên">Phú Xuyên</option>
+                            <option value="Phúc Thọ">Phúc Thọ</option>
+                            <option value="Quốc Oai">Quốc Oai</option>
+                            <option value="Sóc Sơn">Sóc Sơn</option>
+                            <option value="Thạch Thất">Thạch Thất</option>
+                            <option value="Thạch Thất">Thạch Thất</option>
+                            <option value="Thanh Trì">Thanh Trì</option>
+                            <option value="Thường Tín">Thường Tín</option>
+                            <option value="Ứng Hòa">Ứng Hòa</option>
+                        </select>
+                    </div>
+                    <div class="main-left-2-item">
+                        <p class="main-left-2-item-tittle">Địa chỉ chi tiết</p>
+                        <input class="main-left-2-item-input" type="text" name="" id="" placeholder="Địa chỉ chi tiết">
+                    </div>
+                    <div class="main-left-2-item-special">
+                        <p class="main-left-2-item-special-tittle">DỊCH VỤ VẬN CHUYỂN</p>
+                        <div class="main-left-2-item-special-check">
+                            <p class="main-left-2-item-special-check-text">Thông tin vận chuyển</p>
+                            <input type="radio" name="check" id=""> <span class="radio1">Tổng khối lượng: </span> <span class="radio2">500g</span> <br>
+                            <input type="radio" name="check" id=""> <span class="radio1">Phí vận chuyển: </span> <span class="radio2">35000 VND</span> <br>
+                            <input type="radio" name="check" id=""> <span class="radio1">Địa chỉ nhận hàng: <br>
+                            <p class="main-left-2-item-special-check-text">Họ tên người nhận:</p>
+                            <p class="main-left-2-item-special-check-text">Địa chỉ:</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="main-left-3">
+                    <p class="main-left-3-tittle">HÌNH THỨC THANH TOÁN</p>
+                    <div class="main-left-3-left">
+                        <label for="purchase1"><img class="label-img" src="https://cocoshop.vn/uploads/tienmat.png" alt=""></label> <input type="radio" name="purchase" id="purchase1">
+                    </div>
+                    <div class="main-left-3-right">
+                        <label for="purchase2"><img class="label-img" src="https://cocoshop.vn/uploads/shops/icon-01.png" alt=""></label> <input type="radio" name="purchase" id="purchase2">
+                    </div>
+                </div>
+                <div class="main-left-4">
+                    <p class="main-left-4-tittle">GHI CHÚ NẾU CÓ</p>
+                    <div class="main-left-4-tittle-input">
+                        <textarea placeholder="NHẬP GHI CHÚ NẾU CÓ" name="" id="" cols="100" rows="10"></textarea>
+                    </div>
+                    <center><input type="radio" name="" id=""> <span>Tôi chắc chắn thông tin đã nhập bên trên là chính xác</span></center>
+                </div>
+            </div>
+            <div class="main-right">
+                <div class="main-right-1">
+                    <p class="main-right-1-tittle">Đơn hàng</p>
+                    <a href=""><p class="main-right-1-tittle">Sửa</p></a>
+                </div>
+                <div class="main-right-2">
+                    <div class="main-right-2-item">
+                        <div class="main-right-2-item-img">
+                            <img src="https://cocoshop.vn/assets/shops/nuoc-hoa/11534130-3794549839946971.jpg" alt="">
+                        </div>
+                        <div class="main-right-2-item-information">
+                            <p class="main-right-2-item-information-name">Nước hoa MKC SEXY RUBY EDP 100ML</p>
+                            <p class="main-right-2-item-information-number">Số lượng: 1</p>
+                            <p class="main-right-2-item-information-price">Giá gốc: 2.830.000 đ</p>
+                            <p class="main-right-2-item-information-into-money">Thành tiền: 2.830.000 đ</p>
+                        </div>
+                    </div>
+
+                    <div class="main-right-2-item">
+                        <div class="main-right-2-item-img">
+                            <img src="https://cocoshop.vn/uploads/shops/2020_08/calvin-klein-eternity-air-for-men-edt-100-ml-1.jpg" alt="">
+                        </div>
+                        <div class="main-right-2-item-information">
+                            <p class="main-right-2-item-information-name">CK ETERNITY AIR MEN EDT 100ml</p>
+                            <p class="main-right-2-item-information-number">Số lượng: 1</p>
+                            <p class="main-right-2-item-information-price">Giá gốc: 2.380.000 đ</p>
+                            <p class="main-right-2-item-information-into-money">Thành tiền: 2.380.000 đ</p>
+                        </div>
+                    </div>
+
+                    <div class="main-right-2-item">
+                        <div class="main-right-2-item-img">
+                            <img src="https://cocoshop.vn/uploads/shops/2020_02/nuoc-hoa-dkny-be-dlicuous-edp-50ml1.jpg" alt="">
+                        </div>
+                        <div class="main-right-2-item-information">
+                            <p class="main-right-2-item-information-name">Nước hoa DKNY Be Dlicuous EDP</p>
+                            <p class="main-right-2-item-information-number">Số lượng: 1</p>
+                            <p class="main-right-2-item-information-price">Giá gốc: 2.050.000 đ</p>
+                            <p class="main-right-2-item-information-into-money">Thành tiền: 2.050.000 đ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-right-3">
+                    <div class="main-right-3-item">
+                        <p class="main-right-3-item-tittle">Tạm tính :</p>
+                        <span class="main-right-3-item-money">7.260.000 đ</span>
+                    </div>
+                    <div class="main-right-3-item">
+                        <p class="main-right-3-item-tittle">Phí vận chuyển:</p>
+                        <span class="main-right-3-item-money">25.000 đ</span>
+                    </div>
+                    <div class="main-right-3-item">
+                        <p class="main-right-3-item-tittle">Thành tiền :</p>
+                        <span class="main-right-3-item-money money">7.285.000đ</span>
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+            <center><button class="send">Gửi thông tin đặt hàng</button></center>
+        </div>
+    </div><!-- hết phần làm main-->
+    <div style="clear: both;"></div>
+     <!-- làm phần cuối trang web  -->
+     <div class="footer">
+        <div class="wraper1">
+            <div id="last">
+                <div id="left-last">
+                <a href=""><img src="https://cocoshop.vn/uploads/logofooter-min-1.png" alt=""></a>
+                <img src="https://cocoshop.vn/uploads/1492058103818_8888090.png" alt="">
+            </div>
+            <div id="main-last">
+                <p class="text-last">COCO SHOP là hệ thống mỹ phẩm chính hãng và uy tín có quy mô lớn số 1 Việt Nam,đa dạng các loại mỹ phẩm đến từ các hãng nổi tiếng trên toàn thế giới,,,Đến  với COCOSHOP các bạn có quyền được yên tâm khi mua sắm cũng như được đáp ứng mọi nhu cầu về làm đẹp. Với phương châm luôn nỗ lực vì khách hàng thân yêu, COCOSHOP không ngừng cố gắng để xứng đáng là địa điểm mua săm tin cậy trong lòng các bạn trẻ</p>
+                <p class="text-last">Trực thuộc Công ty TNHH Thương mại và đầu tư xuất nhập khẩu Việt Nam 
+                    Địa chỉ : Số 10, ngõ 59 Hoàng Cầu, P. Ô Chợ Dừa, Q. Đống Đa, Tp. Hà Nội
+                    Phone: +84915156485</p>
+                <p class="text-last">© Bản quyền thuộc về Coco Shop - Chuỗi cửa hàng mỹ phẩm chính hãng làm đẹp. </p>
+            </div>
+            <div id="last-last">
+                <ul>
+                    <li class="last-last-item"><a href="">giới thiệu</a></li>
+                    <li class="last-last-item"><a href="">hướng dẫn mua hàng</a></li>
+                    <li class="last-last-item"><a href="">giải đáp thắc mắc</a></li>
+                    <li class="last-last-item"><a href="">chính sách đổi trả</a></li>
+                    <li class="last-last-item"> Điện thoại: +84-988888290</li>
+                    <li class="last-last-item">Email: cskh@cocoshop.vn</li>
+                    <li class="last-last-item">Website: http://cocoshop.vn</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

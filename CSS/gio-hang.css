@@ -1,0 +1,510 @@
+.wraper{
+    width: 1200px;
+    margin: 0 auto;
+}
+.wraper1{
+    width: 90%;
+    margin: 0 auto;
+}
+/* làm phần header 
+làm phần header đầu tiên */
+/* làm phần background full màn hình */
+.full-background{
+    width: 100%;
+    height: 35px;
+    background-color: black;
+}
+.header-first{
+    width: 1200px;
+    height: 35px;
+    display: inline-flex;
+    justify-content: space-between;
+    line-height: 35px;
+}
+.number-phone{
+    font-size: 16px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: white;
+    margin: 0;
+}
+.header-first-tittle{
+    width: 600px;
+}
+.header-first-tittle p{
+    font-size: 16px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: white;
+    margin: 0;
+}
+.header-first-icon a{
+    text-decoration: none;
+    color: white;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* sang phần header thứ 2*/
+.header-second{
+    width: 1200px;
+    height: 120px;
+    display: inline-flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+/* làm phần logo */
+.logo{
+    width: 13%;
+}
+.logo img{
+    width: 100%;
+    height: 100px;
+}
+/* làm phần search */
+.header-second-search{
+    width: 530px;
+    height: 57px;
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-top: 4px;
+    border-radius: 25px;
+    margin-top: 12px;
+}
+.search{
+    width: 400px;
+    height: 45px;
+    border: none;
+    padding-left: 15px;
+    font-size: 16px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    outline: none;
+}
+.search:hover{
+    border: none;
+}
+.submit{
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    border-left: 1px solid black;
+    outline: none;
+}
+ /* làm phần login  */
+ .login{
+     width: 150px;
+     height: 70px;
+     margin-top: 10px;
+ }
+ .icon-login{
+     width: 40px;
+     height: 47px;
+     box-sizing: border-box;
+     padding: 8px 8px 10px 8px;
+     border: 1px solid black;
+     border-radius: 50%;
+     margin: 0 auto;
+     margin-bottom: 5px;
+}
+.icon-login i{
+    font-size: 20px;
+}
+.login-item a{
+    color: black;
+    font-size: 16px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-decoration: none;
+}
+
+/* làm phần mua hàng */
+.buy{
+    width: 45px;
+    height: 47px;
+    box-sizing: border-box;
+    padding: 8px 8px 10px 8px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.buy i{
+    font-size: 22px;
+}
+.buy:hover {
+    border-color: red;
+}
+.buy:hover .fa-shopping-cart{
+    color: red;
+}
+
+/* làm phần header thứ ba */
+.header-three{
+    width: 100%;
+    height: 70px;
+    border-top: 1px solid black ;
+    border-bottom: 1px solid black ;
+}
+.header-three ul{
+    margin: 0;
+}
+.header-three-menu-item{
+    width: 170px;
+    height: 70px;
+    display: inline-block;
+    font-size: 14px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 70px;
+    font-weight: 700;
+    text-align: center;
+}
+.item1{
+    height: 68px;
+    width: 280px;
+    background-color: lightpink;
+    border-bottom: 4px solid black;
+}
+.header-three-menu-item a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+.header-three-menu-item a:hover{
+    color: rgb(155, 23, 23);
+}
+
+
+/* sang phần làm main */
+.main{
+    width: 100%;
+    height: 1500px;
+}
+.wraper2{
+    width: 70%;
+    margin: auto;
+}
+.main-1{
+    width: 100%;
+    height: 46px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(116, 110, 110, 0.363);
+    box-sizing: border-box;
+   padding-left: 15px;
+   line-height: 46px;
+}
+.main-1 a{
+    text-decoration: none;
+}
+.main-1 p{
+    color: black;
+    margin: 0;
+}
+.main-2{
+    width: 100%;
+    height: 70px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(110, 107, 107, 0.486);
+    box-sizing: border-box;
+    padding: 15px 10px 5px 10px;
+}
+.main-2 p{
+    margin: 0;
+    font-size: 14px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: rgb(163, 154, 154);
+}
+/* sang phần làm main bên trái */
+.main-left{
+    width: 40vw;
+    height: 100%;
+    border: 1px solid rgba(116, 110, 110, 0.363);
+    box-sizing: border-box;
+    border-top: 3px solid black;
+    float: left;
+}
+.main-left-1{
+    width: 100%;
+    height: 46px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+   padding-left: 15px;
+   line-height: 46px;
+}
+.main-left-1 p{
+    width: 98%;
+    margin: auto;
+    color: black;
+    margin: 0;
+    border-bottom: 1px solid rgba(116, 110, 110, 0.363);
+}
+.fa-map-marker-alt{
+    margin-right: 15px;
+}
+.main-left-2{
+    width: 96%;
+    height: 756px;
+    margin: auto;
+}
+.main-left-2-item{
+    width: 100%;
+    height: 77px;
+    line-height: 28px;
+}
+.main-left-2-item-tittle{
+    margin: 0;
+    font-size: 13px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 600;
+}
+.main-left-2-item-input{
+    width: 90%;
+    height: 40px;
+    font-size: 13px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+    padding: 5px 10px 5px 10px;
+    outline: none;
+}
+.main-left-2-item-search{
+    width: 90%;
+    height: 40px;
+    font-size: 14px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+    padding: 5px 10px 5px 10px;
+    outline: none;
+}
+.main-left-2-item-special{
+    width: 100%;
+    height: 251px;
+    line-height: 28px;
+}
+.main-left-2-item-special-tittle{
+    margin: 0;
+    font-size: 14px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.main-left-2-item-special-check{
+    width: 95%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid rgba(116, 110, 110, 0.363);
+}
+.main-left-2-item-special-check-text{
+    margin: 0;
+    font-size: 13px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 600;
+}
+.radio1{
+    font-size: 13px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 600;
+}
+.radio2{
+    font-size: 13px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.main-left-3{
+    width: 98%;
+    height: 150px;
+    margin: auto;
+}
+.main-left-3-tittle{
+    margin: 0;
+    font-size: 14px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.main-left-3-left{
+    width: 48%;
+    height: 100px;
+    float: left;
+}
+.main-left-3-right{
+    width: 48%;
+    height: 100px;
+    float: right;
+}
+.label-img{
+    width: 50%;
+    height: 70%;
+    object-fit: cover;
+}
+.main-left-4{
+    width: 98%;
+    height: 202px;
+    margin: auto;
+}
+.main-left-4-tittle{
+    margin: 0;
+    font-size: 14px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.main-left-4-tittle-input{
+    width: 98%;
+    height: 100px;
+    font-size: 13px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+    padding: 5px 10px 5px 10px;
+    overflow:hidden;
+    border: 1px solid rgba(148, 140, 140, 0.438);
+    margin-bottom: 15px;
+}
+.main-left-4-tittle-input textarea{
+    outline: none;
+    border: none;
+}
+/* sang phần làm main bên phải */
+.main-right{
+    width: 38%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 7px 10px 7px 10px;
+    float: right;
+    border: 1px solid rgba(119, 113, 113, 0.527);
+}
+.main-right-1{
+    width: 100%;
+    height: 44px;
+    display: inline-flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(119, 113, 113, 0.527);
+    line-height: 44px;
+    margin-bottom: 15px;
+}
+.main-right-1-tittle{
+    margin: 0;
+    font-size: 17px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.main-right-1 a{
+    text-decoration: none;
+    color: black;
+}
+.main-right-2{
+    width: 100%;
+}
+.main-right-2-item{
+    width: 100%;
+    height: 140px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding-bottom: 7px;
+    border-bottom: 1px solid rgba(119, 113, 113, 0.527);
+}
+.main-right-2-item-img{
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+.main-right-2-item-img img{
+    width: 100%;
+    height: 100%;
+}
+.main-right-2-item-information
+{
+    width: 60%;
+    height: 100%;
+    float: right;
+}
+.main-right-2-item-information p{
+    margin: 0;
+    font-size: 14px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-bottom: 8px;
+}
+.main-right-2-item-information-name{
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+.main-right-3{
+    width: 70%;
+    height: 130px;
+    margin: auto;
+}
+.main-right-3-item{
+    width: 100%;
+    height: 25%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.main-right-3-item-tittle{
+    margin: 0;
+    font-size: 17px;
+    font-weight: bold;
+}
+.main-right-3-item-money{
+    font-size: 17px;
+    font-weight: 600;
+}
+.money{
+    font-size: 20px;
+    color: red;
+}
+.send{
+    width: 25%;
+    height: 50px;
+    margin-top: 20px;
+    color: white;
+    font-size: 17px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: black;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.send:hover{
+    opacity: 0.7;
+    transition: 0.7s;
+    
+}
+
+/* làm phần cuối của trang web */
+.footer{
+    width: 100%;
+    height: 330px;
+    background-color: black;
+    line-height: 310px;
+    display: block;
+}
+#last{
+    display: inline-flex;
+    line-height: 20px;
+}
+#left-last{
+    width: 25%;
+    height: 100px;
+    padding-top: 30px;
+}
+#main-last{
+    width: 55%;
+}
+#last-last{
+    width: 30%;
+}
+.text-last{
+    color: white;
+}
+.last-last-item a{
+    text-decoration: none;
+    color: white;
+}
+.last-last-item{
+    color: white;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+
+
+
